@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
@@ -17,7 +19,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -29,6 +31,10 @@ gem 'nokogiri'
 gem "dbpedia"
 gem "sparql-client"
 gem "rdf"
+
+gem 'rails_12factor', group: :production
+
+gem 'thin'
 
 
 # To use ActiveModel has_secure_password
