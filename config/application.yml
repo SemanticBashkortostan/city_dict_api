@@ -1,0 +1,14 @@
+defaults: &defaults
+  default_cities: [ ["Ишимбай",  "Ishimbay"], ["Стерлитамак", "Sterlitamak"],
+                    ["Уфа",  "Ufa"], ["Салават", "Salavat"], ["Нефтекамск", "Neftekamsk"] ]
+
+
+development:
+  <<: *defaults
+  neat_setting: 800
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
