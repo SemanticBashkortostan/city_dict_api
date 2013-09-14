@@ -4,6 +4,7 @@ class CreateVocabularyEntries < ActiveRecord::Migration
       t.integer :city_id
       t.string :name
       t.text :metadata
+      t.string :url
 
       t.timestamps
     end
