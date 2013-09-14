@@ -1,4 +1,10 @@
 CityDictApi::Application.routes.draw do
+  root :to => "main#index"
+
+  resources :cities do
+    resources :words do
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
