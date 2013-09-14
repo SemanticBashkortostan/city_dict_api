@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130914160951) do
+ActiveRecord::Schema.define(:version => 20130914163322) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -25,9 +25,10 @@ ActiveRecord::Schema.define(:version => 20130914160951) do
   create_table "vocabulary_entries", :force => true do |t|
     t.integer  "city_id"
     t.string   "name"
-    t.text     "metadata"
+    t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.hstore   "metadata"
   end
 
   add_index "vocabulary_entries", ["city_id", "name"], :name => "index_vocabulary_entries_on_city_id_and_name"
