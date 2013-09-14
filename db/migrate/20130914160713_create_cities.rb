@@ -8,5 +8,7 @@ class CreateCities < ActiveRecord::Migration
     end
 
     add_index :cities, :name
+
+    Settings.default_cities.each{|rus_name, eng_name| City.create! name: rus_name, eng_name: eng_name}
   end
 end

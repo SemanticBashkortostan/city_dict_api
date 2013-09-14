@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130914163322) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.hstore   "metadata"
+    t.string   "source"
   end
 
   add_index "vocabulary_entries", ["city_id", "name"], :name => "index_vocabulary_entries_on_city_id_and_name"
