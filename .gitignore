@@ -33,7 +33,6 @@ db/*.sqlite3
 /config/config.yml
 /config/initializers/setup_mail.rb
 /config/initializers/exception_notification.rb
-/config/initializers/secret_token.rb
 Capfile
 /config/deploy.rb
 /coverage.data
