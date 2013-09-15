@@ -10,4 +10,13 @@ class MainController < ApplicationController
       format.json { render json: @types}
     end
   end
+
+
+  def word
+    @found = VocabularyEntry.where(:name => [params[:name], params[:name].mb_chars.capitalize.to_s]).first
+    respond_to do |format|
+      format.json{ render json: @found }
+      format.xml{ render xml: @found }
+    end
+  end
 end
