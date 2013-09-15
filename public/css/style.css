@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+
+body {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: arial, sans-serif;
+	color: #828282;
+	background: #FFFFFF repeat 0 0;
+}
+
+a { color: #067aa7; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+article, aside, details, footer, header, menu, nav, section { display: block; }
+input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+textarea { overflow: auto; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+.shell  { width: 80%; margin: 0 auto; }
+.main { padding:0px; position: relative; height: 100%; padding-bottom: 20px }
+.main h1 { font-size: 36px; color: #2d2d2d; padding-top: 20px; line-height: 36px; font-family: "OfficinaSansC", Arial, sans-serif; font-weight: 500; padding-bottom: 12px; }
+.main h2 { font-size: 28px; color: #2d2d2d; padding-top: 10px; line-height: 28px; font-family: "OfficinaSansC", Arial, sans-serif; font-weight: 500; padding-bottom: 12px; }
+.main h2 .top {font-family: "OfficinaSansC", Arial, sans-serif; font-size:18px;float:right; line-height: 22px;border-bottom: 1px dashed #067AA7; text-decoration: none}
+.main h3 { font-size: 22px; color: #2d2d2d; line-height: 26px; font-family: "OfficinaSansC", Arial, sans-serif; font-weight: 500; padding-bottom: 8px; }
+.main section ul {
+    list-style: none;
+}
+.main section ul li {
+    height: 40px;
+    padding-left: 50px;
+    line-height: 19px;
+    padding-bottom: 8px;
+}
+.main section ul li a{
+    display: inline-block;
+    font-size: 14px;
+}
+.main section ul li.opensreet {
+    background: url("images/openstreetmap.png") no-repeat 0 0;
+}
+.main section ul li.dbpedia {
+    background: url("images/dbpedia.png") no-repeat 0 0;
+}
+.main section ul li.rss {
+    background: url("images/rss.png") no-repeat 0 0;
+}
+.main section ul li.tomita {
+    background: url("images/tomita.png") no-repeat 0 0;
+}
+.main section ul li.news {
+    background: url("images/news.png") no-repeat 0 0;
+}
+.main section ul li.api {
+    background: url("images/api.png") no-repeat 0 0;
+}
+
+html, body { height: 100%; }
+#wrapper {width: 100%}
+#footer { border-top: 1px solid #fff; position: relative; height:54px; line-height:54px; text-align: right }
+
+@font-face {
+    font-family: OfficinaSansC;
+    src: url(OfficinaSansC-Book.ttf);
+}
