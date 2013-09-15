@@ -1,0 +1,29 @@
+encoding "utf8";               // указываем кодировку, в которой написан этот файл
+
+import "base.proto";           // подключаем описания protobuf-типов (TAuxDicArticle и прочих)
+import "articles_base.proto";  // Файлы base.proto и articles_base.proto встроены в компилятор.
+                               // Их необходимо включать в начало любого gzt-словаря.
+
+import "facttypes.proto";
+
+
+TAuxDicArticle "башИмя"
+{
+    key = { "name" type=FILE }
+}
+
+TAuxDicArticle "башФам"
+{
+    key = { "surname" type=FILE }
+}
+
+
+TAuxDicArticle "город"
+{
+	key = "уфа" | "cтерлитамак" | "нефтекамск" | "ишимбай" | "салават" | "Бирск" | "Бишкек"
+}
+
+TAuxDicArticle "персоны"
+{
+    key = { "tomita:adjperson.cxx" type=CUSTOM }
+}

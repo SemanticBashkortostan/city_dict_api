@@ -1,0 +1,28 @@
+encoding "utf8"; // указываем кодировку, в которой написан конфигурационный файл
+
+TTextMinerConfig {
+  Dictionary = "mydic.gzt"; // путь к корневому словарю
+  
+  PrettyOutput = "PrettyOutput.html"; // путь к файлу с отладочным выводом в удобном для чтения виде
+
+  Articles = [
+    { Name = "персоны" }, // название статьи в корневом словаре,
+    { Name = "город" },
+    { Name = "башИмя" },
+    { Name = "башФам" }                     // которая содержит запускаемую грамматику
+  ]
+
+  Facts = [
+    { Name = "Fact" }
+  ]
+
+  Input = {
+    File = "for_tomita.txt"; // путь к входному файлу
+  }
+
+  Output = {
+    File = "facts.1.xml";
+    Format = xml;        // можно использовать следующие форматы:
+                          // proto (Google Protobuf), xml, text
+  }
+}
