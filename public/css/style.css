@@ -63,9 +63,23 @@ textarea { overflow: auto; }
 
 html, body { height: 100%; }
 #wrapper {width: 100%}
-#footer { border-top: 1px solid #fff; position: relative; height:54px; line-height:54px; text-align: right }
+#footer { border-top: 1px solid #fff; position: relative; height:54px; line-height:54px; text-align: left }
 
 @font-face {
     font-family: OfficinaSansC;
     src: url(OfficinaSansC-Book.ttf);
+}
+.main section .item {
+    font-size: 18px;
+    padding: 3px 0;
+}
+.main section {
+    display: inline-block; width: 45%; vertical-align: top;padding-bottom: 20px;
+}
+.main section ul li.github {
+    background: url("images/github.png") no-repeat 0 0;
+}
+.main section .item span{
+    color: #ff6000;
+    font-size: 20px;
 }
