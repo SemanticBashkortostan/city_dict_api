@@ -2,6 +2,7 @@ class WordsController < ApplicationController
 
   def index
     words = City.find( params[:city_id] ).vocabulary_entries
+    words = words.where("metadata -> 'type' = :value", value: params[:type]) if params[:type]
     words = words.page(params[:page])
 
     respond_to do |format|
