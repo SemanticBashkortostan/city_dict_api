@@ -5,6 +5,7 @@ class VocabularyEntry < ActiveRecord::Base
 
   belongs_to :city
 
+  validates :city_id, :presence => true
   validate :city_and_name_uniqueness
 
 

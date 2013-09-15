@@ -10,8 +10,8 @@ class TomitaFactsExtractor
     xml = Nokogiri::XML(open(@file))
     xml.xpath('/fdo_objects/document/facts/Fact').each do |entry|
       lead_id = entry["LeadID"]
-      type = entry.children[1].first.last
-      value = entry.children[3].first.last
+      type = entry.children[0].first.last
+      value = entry.children[1].first.last
 
       facts_hash[lead_id] ||= Hash.new {|h, k| h[k] = Set.new }
       facts_hash[lead_id][type] << value
@@ -30,7 +30,7 @@ class TomitaFactsExtractor
     hash.each do |k,v|
       new_root = v["CITY"].first
       v.delete("CITY")
-      if v.present? && new_root
+      if v.present? && new_root.present?
         last_hash[new_root] ||= Set.new
         last_hash[new_root] <<  v
       end
@@ -40,9 +40,20 @@ class TomitaFactsExtractor
   end
 
 
-  def self.lazy filename = "facts.xml"
+  def self.lazy filename = "facts-1.xml"
     tomita = TomitaFactsExtractor.new filename
-    puts tomita.get_facts
+    tomita.get_facts.each do |city_name, set_of_hash|
+      set_of_hash.each do |hash|
+        hash.each do |type, values|
+          values.each do |named_entity|
+            ve = VocabularyEntry.new name: named_entity, city_id: find_city(city_name), source: :tomita
+            ve.url = "http:://rbcitynews.ru"
+            ve.metadata["type"] = type
+            ve.save
+          end
+        end
+      end
+    end
   end
 
 
@@ -68,6 +79,11 @@ class TomitaFactsExtractor
     resp = Net::HTTP.get_response(URI.parse(url))
     data = resp.body
     JSON.parse(data)
+  end
+
+
+  def self.find_city city_name
+    City.find_by_name(city_name.mb_chars.capitalize.to_s).try :id
   end
 
 end
