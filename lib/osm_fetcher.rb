@@ -31,7 +31,7 @@ class OsmFetcher
     xmlfeed = Nokogiri::XML(open(@filename))
     rows = xmlfeed.xpath("//*[@k=\"name\"]")
     features = []
-    rows.each do |row|
+    rows.shuffle[0..1400].each do |row|
       name = row.attributes['v'].value
       osm_id = row.parent.attributes["id"].value
       amenity = row.parent.xpath("tag[@k=\"amenity\"]").first
@@ -69,7 +69,7 @@ class OsmFetcher
 
     osm_arr.each do |(city_eng_name, filename, bounding_box)|
       osm = OsmFetcher.new bounding_box, filename
-      osm.get_features[0..1500].each do |name, amenity, osm_id|
+      osm.get_features.each do |name, amenity, osm_id|
         ve = VocabularyEntry.new name: name, city_id: City.find_by_eng_name(city_eng_name).id, source: :osm
         ve.metadata['type'] = amenity
         ve.metadata['osm_id'] = osm_id
