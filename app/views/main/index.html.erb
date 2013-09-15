@@ -49,19 +49,17 @@
     <h3>/cities/:city_id/words.(json|xml)</h3>
     <p>Возвращает список фактов с метаданными для определенного города.
       Формат выдачи: XML или JSON.</p>
-    <p>Возможный дополнительный параметр: type - название категории.
-    Например, <strong>/cities/3/words.xml?type=EVENT</strong>
-    </p>
-    <p>Пример: /cities/1/words.json</p>
+    <p>Возможный дополнительный параметр: type - название категории.</p>
+    <p>Пример: /cities/3/words.xml?type=school </p>
     <pre>
 [
   {
     "city_id":1,
     "created_at":"2013-09-15T00:28:34Z",
-    "id":2209,
+    "id":1337,
     "metadata":
       {
-        "type":null,
+        "type":school,
         "osm_id":"334371777",
         "bounding_box": "{:top=>53.4731, :left=>55.9502, :bottom=>53.3999, :right=>56.1322}"
       },
