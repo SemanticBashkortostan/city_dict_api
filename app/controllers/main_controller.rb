@@ -19,4 +19,13 @@ class MainController < ApplicationController
       format.xml{ render xml: @found }
     end
   end
+
+
+  def all_data
+    @ves = VocabularyEntry.all
+    respond_to do |format|
+      format.json{ render json: @ves }
+      format.xml{ render xml: @ves }
+    end
+  end
 end

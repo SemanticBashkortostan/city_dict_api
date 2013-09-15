@@ -8,6 +8,7 @@ CityDictApi::Application.routes.draw do
 
   match '/types' => "main#types"
   match "/word" => "main#word"
+  match "/all_data" => "main#all_data"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
