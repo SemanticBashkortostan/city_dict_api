@@ -2,6 +2,7 @@ class WordsController < ApplicationController
 
   def index
     words = City.find( params[:city_id] ).vocabulary_entries
+    words = words.page(params[:page])
 
     respond_to do |format|
       format.xml  { render xml: words}

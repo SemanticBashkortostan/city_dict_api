@@ -56,6 +56,9 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.0)
     json_pure (1.8.0)
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -140,6 +143,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dbpedia
   jquery-rails
+  kaminari
   nokogiri
   pg
   rails (= 3.2.14)
