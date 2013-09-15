@@ -60,16 +60,16 @@ class OsmFetcher
   #TODO: Add version of .osm file!!!
   def self.fill_db!
     osm_arr = [
-                      ["Sterlitamak", "sterlitamak.osm", OsmFetcher::STERLITAMAK_BOUNDING_BOX],
-                      ["Salavat", "salavat.osm", OsmFetcher::SALAVAT_BOUNDING_BOX],
-                      ["Neftekamsk", "neftekamsk.osm", OsmFetcher::NEFTEKAMSK_BOUNDING_BOX],
-                      ["Ishimbay", "ishimbay.osm", OsmFetcher::ISHIMBAY_BOUNDING_BOX],
+                      #["Sterlitamak", "sterlitamak.osm", OsmFetcher::STERLITAMAK_BOUNDING_BOX],
+                      #["Salavat", "salavat.osm", OsmFetcher::SALAVAT_BOUNDING_BOX],
+                      #["Neftekamsk", "neftekamsk.osm", OsmFetcher::NEFTEKAMSK_BOUNDING_BOX],
+                      #["Ishimbay", "ishimbay.osm", OsmFetcher::ISHIMBAY_BOUNDING_BOX],
                       ["Ufa", "ufa.osm", OsmFetcher::UFA_BOUNDING_BOX]
                ]
 
     osm_arr.each do |(city_eng_name, filename, bounding_box)|
       osm = OsmFetcher.new bounding_box, filename
-      osm.get_features.each do |name, amenity, osm_id|
+      osm.get_features[0..1500].each do |name, amenity, osm_id|
         ve = VocabularyEntry.new name: name, city_id: City.find_by_eng_name(city_eng_name).id, source: :osm
         ve.metadata['type'] = amenity
         ve.metadata['osm_id'] = osm_id
