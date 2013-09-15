@@ -1,2 +1,67 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<div id="wrapper" xmlns="http://www.w3.org/1999/html">
+       <!-- header -->
+       <header  id="header">
+           <div class="shell">
+               <a href="/" class="logo">API базы фактов по городам Башкартастана</a>
+           </div>
+       </header>
+       <!-- main -->
+       <div class="main">
+           <div class="shell">
+   <section id="introduction" class="single-page scrollblock">
+       <h2>Введение</h2>
+       <p>Базы фактов по городам Башкортастана позволяет получить различные факты </p>
+   </section>
+   <section id="addapi" class="single-page scrollblock">
+       <h2>Формат ответа</h2>
+       <p>В зависимости от расширения пути URL - JSON или XML. Например, /cities.xml, /cities.json.</p>
+   </section>
+
+   <section id="services" class="single-page scrollblock">
+       <h2>API</h2>
+       <h3>/cities.(json|xml)</h3>
+       <p>Возвращает список городов. Формат выдачи: XML или JSON.</p>
+       <p>Пример: /cities.json</p>
+           <pre>
+[
+   {
+       "created_at":"2013-09-14T23:36:05Z",
+       "eng_name":"Ishimbay",
+       "id":1,
+       "name":"Ишимбай",
+       "updated_at":"2013-09-14T23:36:05Z"
+   }
+]
+                       </pre>
+           </section>
+
+<section id="services" class="single-page scrollblock">
+    <h3>/types.(json|xml)</h3>
+    <p>Возвращает список категории.
+    Формат выдачи: XML или JSON.</p>
+    <p>Пример: /types.json</p>
+    <pre>
+    </pre>
+</section>
+
+<section id="services" class="single-page scrollblock">
+    <h3>/cities/:city_id/words.(json|xml)</h3>
+    <p>Возвращает список фактов с метаданными для определенного города.
+      Формат выдачи: XML или JSON.</p>
+    <p>Возможный дополнительный параметр: type - название категории.
+    Например, <strong>/cities/3/words.xml?type=EVENT</strong>
+    </p>
+    <p>Пример: /cities/1/words.json</p>
+    <pre>
+    </pre>
+</section>
+
+
+           </div>
+       </div>
+<div  id="footer">
+       <div class="shell">
+           <p class="copy">&copy; Яндекс Хакатон 2013</p>
+       </div>
+</div>
+   <script type="text/javascript" src="js/site.js"></script>
