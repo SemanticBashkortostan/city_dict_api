@@ -1,0 +1,867 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdo_objects>
+    <document url="" di="0" bi="-1" date="2013-09-15">
+        <facts>
+            <Fact FactID="0" LeadID="0" FieldsInfo="n0;" pos="54" len="8" sn="0" fw="11" lw="11">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="1" LeadID="0" FieldsInfo="n1;" pos="153" len="5" sn="0" fw="23" lw="23">
+                <type val="FEED"/>
+                <data val="FEED1"/>
+            </Fact>
+            <Fact FactID="2" LeadID="1" FieldsInfo="n0;" pos="207" len="5" sn="1" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED1"/>
+            </Fact>
+            <Fact FactID="3" LeadID="1" FieldsInfo="n1;" pos="216" len="5" sn="1" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED1"/>
+            </Fact>
+            <Fact FactID="4" LeadID="1" FieldsInfo="n2;" pos="225" len="5" sn="1" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED1"/>
+            </Fact>
+            <Fact FactID="5" LeadID="2" FieldsInfo="n0;" pos="349" len="5" sn="2" fw="15" lw="15">
+                <type val="FEED"/>
+                <data val="FEED2"/>
+            </Fact>
+            <Fact FactID="6" LeadID="3" FieldsInfo="n0;" pos="443" len="5" sn="3" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED2"/>
+            </Fact>
+            <Fact FactID="7" LeadID="3" FieldsInfo="n1;" pos="452" len="5" sn="3" fw="18" lw="18">
+                <type val="FEED"/>
+                <data val="FEED2"/>
+            </Fact>
+            <Fact FactID="8" LeadID="3" FieldsInfo="n2;" pos="461" len="5" sn="3" fw="22" lw="22">
+                <type val="FEED"/>
+                <data val="FEED2"/>
+            </Fact>
+            <Fact FactID="9" LeadID="4" FieldsInfo="n0;" pos="501" len="14" sn="4" fw="3" lw="4">
+                <type val="PERSON"/>
+                <data val="АЛЕКСЕЙ ВОЛКОВ"/>
+            </Fact>
+            <Fact FactID="10" LeadID="4" FieldsInfo="n1;" pos="537" len="15" sn="4" fw="8" lw="9">
+                <type val="EVENT"/>
+                <data val="САЛАВАТ ЮЛАЕВЕ"/>
+            </Fact>
+            <Fact FactID="11" LeadID="4" FieldsInfo="n2;" pos="492" len="7" sn="4" fw="2" lw="2">
+                <type val="EVENT"/>
+                <data val="АТЛАНТ"/>
+            </Fact>
+            <Fact FactID="12" LeadID="4" FieldsInfo="n3;" pos="593" len="5" sn="4" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED3"/>
+            </Fact>
+            <Fact FactID="13" LeadID="5" FieldsInfo="n0;" pos="619" len="9" sn="5" fw="3" lw="3">
+                <type val="EVENT"/>
+                <data val="УФА-АРЕН"/>
+            </Fact>
+            <Fact FactID="14" LeadID="5" FieldsInfo="n1;" pos="736" len="5" sn="5" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED4"/>
+            </Fact>
+            <Fact FactID="15" LeadID="6" FieldsInfo="n0;" pos="787" len="9" sn="6" fw="8" lw="8">
+                <type val="EVENT"/>
+                <data val="УФА-АРЕН"/>
+            </Fact>
+            <Fact FactID="16" LeadID="6" FieldsInfo="n1;" pos="802" len="5" sn="6" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED4"/>
+            </Fact>
+            <Fact FactID="17" LeadID="6" FieldsInfo="n2;" pos="811" len="5" sn="6" fw="15" lw="15">
+                <type val="FEED"/>
+                <data val="FEED4"/>
+            </Fact>
+            <Fact FactID="18" LeadID="6" FieldsInfo="n3;" pos="820" len="5" sn="6" fw="19" lw="19">
+                <type val="FEED"/>
+                <data val="FEED4"/>
+            </Fact>
+            <Fact FactID="19" LeadID="7" FieldsInfo="n0;" pos="853" len="11" sn="7" fw="2" lw="2">
+                <type val="EVENT"/>
+                <data val="САМЫЙ-САМЫЙ"/>
+            </Fact>
+            <Fact FactID="20" LeadID="7" FieldsInfo="n1;" pos="983" len="5" sn="7" fw="20" lw="20">
+                <type val="FEED"/>
+                <data val="FEED5"/>
+            </Fact>
+            <Fact FactID="21" LeadID="8" FieldsInfo="n0;" pos="1035" len="5" sn="8" fw="7" lw="7">
+                <type val="FEED"/>
+                <data val="FEED5"/>
+            </Fact>
+            <Fact FactID="22" LeadID="8" FieldsInfo="n1;" pos="1044" len="5" sn="8" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED5"/>
+            </Fact>
+            <Fact FactID="23" LeadID="8" FieldsInfo="n2;" pos="1053" len="5" sn="8" fw="15" lw="15">
+                <type val="FEED"/>
+                <data val="FEED5"/>
+            </Fact>
+            <Fact FactID="24" LeadID="9" FieldsInfo="n0;" pos="1132" len="5" sn="9" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED6"/>
+            </Fact>
+            <Fact FactID="25" LeadID="10" FieldsInfo="n0;" pos="1150" len="3" sn="10" fw="2" lw="2">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="26" LeadID="10" FieldsInfo="n1;" pos="1236" len="5" sn="10" fw="17" lw="17">
+                <type val="FEED"/>
+                <data val="FEED7"/>
+            </Fact>
+            <Fact FactID="27" LeadID="11" FieldsInfo="n0;" pos="1370" len="5" sn="11" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED7"/>
+            </Fact>
+            <Fact FactID="28" LeadID="12" FieldsInfo="n0;" pos="1382" len="26" sn="12" fw="1" lw="3">
+                <type val="PERSON"/>
+                <data val="ВЛАДИМИР ВАСИЛЬЕВИЧ ЧЕРНОВ"/>
+            </Fact>
+            <Fact FactID="29" LeadID="12" FieldsInfo="n1;" pos="1378" len="3" sn="12" fw="0" lw="0">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="30" LeadID="12" FieldsInfo="n2;" pos="1410" len="5" sn="12" fw="5" lw="5">
+                <type val="FEED"/>
+                <data val="FEED7"/>
+            </Fact>
+            <Fact FactID="31" LeadID="13" FieldsInfo="n0;" pos="1452" len="5" sn="13" fw="5" lw="5">
+                <type val="FEED"/>
+                <data val="FEED8"/>
+            </Fact>
+            <Fact FactID="32" LeadID="14" FieldsInfo="n0;" pos="1625" len="5" sn="14" fw="22" lw="22">
+                <type val="FEED"/>
+                <data val="FEED9"/>
+            </Fact>
+            <Fact FactID="33" LeadID="15" FieldsInfo="n0;" pos="1661" len="5" sn="15" fw="4" lw="4">
+                <type val="FEED"/>
+                <data val="FEED9"/>
+            </Fact>
+            <Fact FactID="34" LeadID="15" FieldsInfo="n1;" pos="1670" len="5" sn="15" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED9"/>
+            </Fact>
+            <Fact FactID="35" LeadID="15" FieldsInfo="n2;" pos="1679" len="5" sn="15" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED9"/>
+            </Fact>
+            <Fact FactID="36" LeadID="16" FieldsInfo="n0;" pos="1796" len="6" sn="16" fw="21" lw="21">
+                <type val="FEED"/>
+                <data val="FEED10"/>
+            </Fact>
+            <Fact FactID="37" LeadID="17" FieldsInfo="n0;" pos="1889" len="6" sn="17" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED10"/>
+            </Fact>
+            <Fact FactID="38" LeadID="17" FieldsInfo="n1;" pos="1899" len="6" sn="17" fw="18" lw="18">
+                <type val="FEED"/>
+                <data val="FEED10"/>
+            </Fact>
+            <Fact FactID="39" LeadID="17" FieldsInfo="n2;" pos="1909" len="6" sn="17" fw="22" lw="22">
+                <type val="FEED"/>
+                <data val="FEED10"/>
+            </Fact>
+            <Fact FactID="40" LeadID="18" FieldsInfo="n0;" pos="2076" len="6" sn="18" fw="23" lw="23">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="41" LeadID="19" FieldsInfo="n0;" pos="2088" len="6" sn="19" fw="3" lw="3">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="42" LeadID="20" FieldsInfo="n0;" pos="2104" len="6" sn="20" fw="2" lw="2">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="43" LeadID="21" FieldsInfo="n0;" pos="2142" len="6" sn="21" fw="6" lw="6">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="44" LeadID="21" FieldsInfo="n1;" pos="2152" len="6" sn="21" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="45" LeadID="21" FieldsInfo="n2;" pos="2162" len="6" sn="21" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED11"/>
+            </Fact>
+            <Fact FactID="46" LeadID="22" FieldsInfo="n0;" pos="2262" len="6" sn="22" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED12"/>
+            </Fact>
+            <Fact FactID="47" LeadID="23" FieldsInfo="n0;" pos="2386" len="6" sn="23" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED13"/>
+            </Fact>
+            <Fact FactID="48" LeadID="24" FieldsInfo="n0;" pos="2459" len="6" sn="24" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED13"/>
+            </Fact>
+            <Fact FactID="49" LeadID="25" FieldsInfo="n0;" pos="2489" len="6" sn="25" fw="3" lw="3">
+                <type val="FEED"/>
+                <data val="FEED13"/>
+            </Fact>
+            <Fact FactID="50" LeadID="25" FieldsInfo="n1;" pos="2499" len="6" sn="25" fw="7" lw="7">
+                <type val="FEED"/>
+                <data val="FEED13"/>
+            </Fact>
+            <Fact FactID="51" LeadID="25" FieldsInfo="n2;" pos="2509" len="6" sn="25" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED13"/>
+            </Fact>
+            <Fact FactID="52" LeadID="26" FieldsInfo="n0;" pos="2600" len="6" sn="26" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED14"/>
+            </Fact>
+            <Fact FactID="53" LeadID="27" FieldsInfo="n0;" pos="2677" len="6" sn="27" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED14"/>
+            </Fact>
+            <Fact FactID="54" LeadID="28" FieldsInfo="n0;" pos="2711" len="18" sn="28" fw="5" lw="6">
+                <type val="EVENT"/>
+                <data val="УФИМСКИЙ ВЕДОМОСТИ"/>
+            </Fact>
+            <Fact FactID="55" LeadID="28" FieldsInfo="n1;" pos="2772" len="19" sn="28" fw="13" lw="14">
+                <type val="PERSON"/>
+                <data val="СЫНТИМИР БАЯЗИТОВ"/>
+            </Fact>
+            <Fact FactID="56" LeadID="28" FieldsInfo="n2;" pos="2768" len="3" sn="28" fw="12" lw="12">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="57" LeadID="28" FieldsInfo="n3;" pos="2793" len="6" sn="28" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED14"/>
+            </Fact>
+            <Fact FactID="58" LeadID="29" FieldsInfo="n0;" pos="2936" len="6" sn="29" fw="23" lw="23">
+                <type val="FEED"/>
+                <data val="FEED15"/>
+            </Fact>
+            <Fact FactID="59" LeadID="30" FieldsInfo="n0;" pos="2981" len="13" sn="30" fw="4" lw="5">
+                <type val="PERSON"/>
+                <data val="ИРЕК ЯЛАЛОВ"/>
+            </Fact>
+            <Fact FactID="60" LeadID="30" FieldsInfo="n1;" pos="3060" len="6" sn="30" fw="17" lw="17">
+                <type val="FEED"/>
+                <data val="FEED15"/>
+            </Fact>
+            <Fact FactID="61" LeadID="31" FieldsInfo="n0;" pos="3170" len="6" sn="31" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED16"/>
+            </Fact>
+            <Fact FactID="62" LeadID="32" FieldsInfo="n0;" pos="3255" len="12" sn="32" fw="9" lw="9">
+                <type val="EVENT"/>
+                <data val="БАШКИРЭНЕРГО"/>
+            </Fact>
+            <Fact FactID="63" LeadID="32" FieldsInfo="n1;" pos="3270" len="6" sn="32" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED16"/>
+            </Fact>
+            <Fact FactID="64" LeadID="33" FieldsInfo="n0;" pos="3284" len="6" sn="33" fw="2" lw="2">
+                <type val="FEED"/>
+                <data val="FEED16"/>
+            </Fact>
+            <Fact FactID="65" LeadID="33" FieldsInfo="n1;" pos="3294" len="6" sn="33" fw="6" lw="6">
+                <type val="FEED"/>
+                <data val="FEED16"/>
+            </Fact>
+            <Fact FactID="66" LeadID="33" FieldsInfo="n2;" pos="3304" len="6" sn="33" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED16"/>
+            </Fact>
+            <Fact FactID="67" LeadID="34" FieldsInfo="n0;" pos="3346" len="6" sn="34" fw="7" lw="7">
+                <type val="FEED"/>
+                <data val="FEED17"/>
+            </Fact>
+            <Fact FactID="68" LeadID="35" FieldsInfo="n0;" pos="3357" len="6" sn="35" fw="2" lw="2">
+                <type val="FEED"/>
+                <data val="FEED17"/>
+            </Fact>
+            <Fact FactID="69" LeadID="36" FieldsInfo="n0;" pos="3368" len="6" sn="36" fw="2" lw="2">
+                <type val="FEED"/>
+                <data val="FEED17"/>
+            </Fact>
+            <Fact FactID="70" LeadID="37" FieldsInfo="n0;" pos="3419" len="8" sn="37" fw="5" lw="5">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="71" LeadID="37" FieldsInfo="n1;" pos="3515" len="7" sn="37" fw="18" lw="18">
+                <type val="EVENT"/>
+                <data val="МОНОМЕР"/>
+            </Fact>
+            <Fact FactID="72" LeadID="37" FieldsInfo="n2;" pos="3567" len="7" sn="37" fw="24" lw="24">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="73" LeadID="37" FieldsInfo="n3;" pos="3577" len="6" sn="37" fw="26" lw="26">
+                <type val="FEED"/>
+                <data val="FEED18"/>
+            </Fact>
+            <Fact FactID="74" LeadID="38" FieldsInfo="n0;" pos="3648" len="6" sn="38" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED18"/>
+            </Fact>
+            <Fact FactID="75" LeadID="39" FieldsInfo="n0;" pos="3659" len="3" sn="39" fw="1" lw="1">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="76" LeadID="39" FieldsInfo="n1;" pos="3739" len="6" sn="39" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED19"/>
+            </Fact>
+            <Fact FactID="77" LeadID="40" FieldsInfo="n0;" pos="3785" len="6" sn="40" fw="7" lw="7">
+                <type val="FEED"/>
+                <data val="FEED19"/>
+            </Fact>
+            <Fact FactID="78" LeadID="41" FieldsInfo="n0;" pos="3875" len="6" sn="41" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED19"/>
+            </Fact>
+            <Fact FactID="79" LeadID="41" FieldsInfo="n1;" pos="3885" len="6" sn="41" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED19"/>
+            </Fact>
+            <Fact FactID="80" LeadID="41" FieldsInfo="n2;" pos="3895" len="6" sn="41" fw="18" lw="18">
+                <type val="FEED"/>
+                <data val="FEED19"/>
+            </Fact>
+            <Fact FactID="81" LeadID="42" FieldsInfo="n0;" pos="3953" len="6" sn="42" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED20"/>
+            </Fact>
+            <Fact FactID="82" LeadID="43" FieldsInfo="n0;" pos="4109" len="6" sn="43" fw="24" lw="24">
+                <type val="FEED"/>
+                <data val="FEED20"/>
+            </Fact>
+            <Fact FactID="83" LeadID="43" FieldsInfo="n1;" pos="4119" len="6" sn="43" fw="28" lw="28">
+                <type val="FEED"/>
+                <data val="FEED20"/>
+            </Fact>
+            <Fact FactID="84" LeadID="43" FieldsInfo="n2;" pos="4129" len="6" sn="43" fw="32" lw="32">
+                <type val="FEED"/>
+                <data val="FEED20"/>
+            </Fact>
+            <Fact FactID="85" LeadID="44" FieldsInfo="n0;" pos="4143" len="3" sn="44" fw="1" lw="1">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="86" LeadID="44" FieldsInfo="n1;" pos="4158" len="8" sn="44" fw="4" lw="4">
+                <type val="EVENT"/>
+                <data val="ТИМАШЕВО"/>
+            </Fact>
+            <Fact FactID="87" LeadID="44" FieldsInfo="n2;" pos="4252" len="6" sn="44" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED21"/>
+            </Fact>
+            <Fact FactID="88" LeadID="45" FieldsInfo="n0;" pos="4350" len="6" sn="45" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED21"/>
+            </Fact>
+            <Fact FactID="89" LeadID="45" FieldsInfo="n1;" pos="4360" len="6" sn="45" fw="20" lw="20">
+                <type val="FEED"/>
+                <data val="FEED21"/>
+            </Fact>
+            <Fact FactID="90" LeadID="45" FieldsInfo="n2;" pos="4370" len="6" sn="45" fw="24" lw="24">
+                <type val="FEED"/>
+                <data val="FEED21"/>
+            </Fact>
+            <Fact FactID="91" LeadID="46" FieldsInfo="n0;" pos="4472" len="8" sn="46" fw="16" lw="16">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="92" LeadID="46" FieldsInfo="n1;" pos="4603" len="7" sn="46" fw="35" lw="35">
+                <type val="EVENT"/>
+                <data val="МОНОМЕР"/>
+            </Fact>
+            <Fact FactID="93" LeadID="46" FieldsInfo="n2;" pos="4632" len="6" sn="46" fw="43" lw="43">
+                <type val="FEED"/>
+                <data val="FEED22"/>
+            </Fact>
+            <Fact FactID="94" LeadID="46" FieldsInfo="n3;" pos="4776" len="7" sn="46" fw="61" lw="61">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="95" LeadID="46" FieldsInfo="n4;" pos="4786" len="6" sn="46" fw="63" lw="63">
+                <type val="FEED"/>
+                <data val="FEED22"/>
+            </Fact>
+            <Fact FactID="96" LeadID="47" FieldsInfo="n0;" pos="4818" len="3" sn="47" fw="4" lw="4">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="97" LeadID="47" FieldsInfo="n1;" pos="4848" len="6" sn="47" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED23"/>
+            </Fact>
+            <Fact FactID="98" LeadID="48" FieldsInfo="n0;" pos="4859" len="8" sn="48" fw="1" lw="1">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="99" LeadID="48" FieldsInfo="n1;" pos="4955" len="7" sn="48" fw="14" lw="14">
+                <type val="EVENT"/>
+                <data val="МОНОМЕР"/>
+            </Fact>
+            <Fact FactID="100" LeadID="48" FieldsInfo="n2;" pos="5007" len="7" sn="48" fw="20" lw="20">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="101" LeadID="48" FieldsInfo="n3;" pos="5017" len="6" sn="48" fw="22" lw="22">
+                <type val="FEED"/>
+                <data val="FEED24"/>
+            </Fact>
+            <Fact FactID="102" LeadID="49" FieldsInfo="n0;" pos="5057" len="6" sn="49" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED24"/>
+            </Fact>
+            <Fact FactID="103" LeadID="49" FieldsInfo="n1;" pos="5067" len="6" sn="49" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED24"/>
+            </Fact>
+            <Fact FactID="104" LeadID="49" FieldsInfo="n2;" pos="5077" len="6" sn="49" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED24"/>
+            </Fact>
+            <Fact FactID="105" LeadID="50" FieldsInfo="n0;" pos="5091" len="6" sn="50" fw="1" lw="1">
+                <type val="CITY"/>
+                <data val="БИРСК"/>
+            </Fact>
+            <Fact FactID="106" LeadID="50" FieldsInfo="n1;" pos="5226" len="6" sn="50" fw="19" lw="19">
+                <type val="FEED"/>
+                <data val="FEED25"/>
+            </Fact>
+            <Fact FactID="107" LeadID="51" FieldsInfo="n0;" pos="5286" len="11" sn="51" fw="14" lw="14">
+                <type val="CITY"/>
+                <data val="НЕФТЕКАМСК"/>
+            </Fact>
+            <Fact FactID="108" LeadID="51" FieldsInfo="n1;" pos="5385" len="6" sn="51" fw="30" lw="30">
+                <type val="FEED"/>
+                <data val="FEED26"/>
+            </Fact>
+            <Fact FactID="109" LeadID="52" FieldsInfo="n0;" pos="5445" len="6" sn="52" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED27"/>
+            </Fact>
+            <Fact FactID="110" LeadID="53" FieldsInfo="n0;" pos="5510" len="6" sn="53" fw="13" lw="13">
+                <type val="FEED"/>
+                <data val="FEED27"/>
+            </Fact>
+            <Fact FactID="111" LeadID="54" FieldsInfo="n0;" pos="5563" len="16" sn="54" fw="5" lw="6">
+                <type val="PERSON"/>
+                <data val="РУСТЭМ ХАМИТОВ"/>
+            </Fact>
+            <Fact FactID="112" LeadID="54" FieldsInfo="n1;" pos="5581" len="6" sn="54" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED27"/>
+            </Fact>
+            <Fact FactID="113" LeadID="55" FieldsInfo="n0;" pos="5644" len="6" sn="55" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED27"/>
+            </Fact>
+            <Fact FactID="114" LeadID="56" FieldsInfo="n0;" pos="5723" len="6" sn="56" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED27"/>
+            </Fact>
+            <Fact FactID="115" LeadID="57" FieldsInfo="n0;" pos="5959" len="11" sn="57" fw="40" lw="40">
+                <type val="CITY"/>
+                <data val="НЕФТЕКАМСК"/>
+            </Fact>
+            <Fact FactID="116" LeadID="57" FieldsInfo="n1;" pos="5972" len="6" sn="57" fw="42" lw="42">
+                <type val="FEED"/>
+                <data val="FEED28"/>
+            </Fact>
+            <Fact FactID="117" LeadID="58" FieldsInfo="n0;" pos="6052" len="8" sn="58" fw="10" lw="10">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="118" LeadID="58" FieldsInfo="n1;" pos="6128" len="7" sn="58" fw="19" lw="19">
+                <type val="EVENT"/>
+                <data val="МОНОМЕР"/>
+            </Fact>
+            <Fact FactID="119" LeadID="58" FieldsInfo="n2;" pos="6157" len="7" sn="58" fw="23" lw="23">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="120" LeadID="58" FieldsInfo="n3;" pos="6169" len="6" sn="58" fw="26" lw="26">
+                <type val="FEED"/>
+                <data val="FEED29"/>
+            </Fact>
+            <Fact FactID="121" LeadID="59" FieldsInfo="n0;" pos="6238" len="6" sn="59" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="122" LeadID="60" FieldsInfo="n0;" pos="6392" len="6" sn="60" fw="20" lw="20">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="123" LeadID="61" FieldsInfo="n0;" pos="6466" len="6" sn="61" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="124" LeadID="62" FieldsInfo="n0;" pos="6576" len="6" sn="62" fw="15" lw="15">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="125" LeadID="63" FieldsInfo="n0;" pos="6612" len="7" sn="63" fw="5" lw="5">
+                <type val="EVENT"/>
+                <data val="СДЮСШОР"/>
+            </Fact>
+            <Fact FactID="126" LeadID="63" FieldsInfo="n1;" pos="6632" len="6" sn="63" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="127" LeadID="63" FieldsInfo="n2;" pos="6642" len="6" sn="63" fw="13" lw="13">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="128" LeadID="63" FieldsInfo="n3;" pos="6652" len="6" sn="63" fw="17" lw="17">
+                <type val="FEED"/>
+                <data val="FEED30"/>
+            </Fact>
+            <Fact FactID="129" LeadID="64" FieldsInfo="n0;" pos="6871" len="6" sn="64" fw="33" lw="33">
+                <type val="FEED"/>
+                <data val="FEED31"/>
+            </Fact>
+            <Fact FactID="130" LeadID="65" FieldsInfo="n0;" pos="6938" len="17" sn="65" fw="8" lw="9">
+                <type val="PERSON"/>
+                <data val="ДМИТРИЙ МЕДВЕДЕВ"/>
+            </Fact>
+            <Fact FactID="131" LeadID="65" FieldsInfo="n1;" pos="7099" len="6" sn="65" fw="30" lw="30">
+                <type val="FEED"/>
+                <data val="FEED31"/>
+            </Fact>
+            <Fact FactID="132" LeadID="65" FieldsInfo="n2;" pos="7109" len="6" sn="65" fw="34" lw="34">
+                <type val="FEED"/>
+                <data val="FEED31"/>
+            </Fact>
+            <Fact FactID="133" LeadID="65" FieldsInfo="n3;" pos="7119" len="6" sn="65" fw="38" lw="38">
+                <type val="FEED"/>
+                <data val="FEED31"/>
+            </Fact>
+            <Fact FactID="134" LeadID="66" FieldsInfo="n0;" pos="7163" len="7" sn="66" fw="8" lw="8">
+                <type val="CITY"/>
+                <data val="САЛАВАТ"/>
+            </Fact>
+            <Fact FactID="135" LeadID="66" FieldsInfo="n1;" pos="7256" len="6" sn="66" fw="24" lw="24">
+                <type val="FEED"/>
+                <data val="FEED33"/>
+            </Fact>
+            <Fact FactID="136" LeadID="67" FieldsInfo="n0;" pos="7310" len="6" sn="67" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED33"/>
+            </Fact>
+            <Fact FactID="137" LeadID="68" FieldsInfo="n0;" pos="7340" len="3" sn="68" fw="2" lw="2">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="138" LeadID="68" FieldsInfo="n1;" pos="7453" len="6" sn="68" fw="17" lw="17">
+                <type val="FEED"/>
+                <data val="FEED33"/>
+            </Fact>
+            <Fact FactID="139" LeadID="69" FieldsInfo="n0;" pos="7497" len="6" sn="69" fw="6" lw="6">
+                <type val="FEED"/>
+                <data val="FEED33"/>
+            </Fact>
+            <Fact FactID="140" LeadID="70" FieldsInfo="n0;" pos="7508" len="3" sn="70" fw="1" lw="1">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="141" LeadID="70" FieldsInfo="n1;" pos="7567" len="6" sn="70" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED34"/>
+            </Fact>
+            <Fact FactID="142" LeadID="71" FieldsInfo="n0;" pos="7697" len="6" sn="71" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED34"/>
+            </Fact>
+            <Fact FactID="143" LeadID="72" FieldsInfo="n0;" pos="7749" len="3" sn="72" fw="6" lw="6">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="144" LeadID="72" FieldsInfo="n1;" pos="7783" len="6" sn="72" fw="14" lw="14">
+                <type val="FEED"/>
+                <data val="FEED34"/>
+            </Fact>
+            <Fact FactID="145" LeadID="73" FieldsInfo="n0;" pos="7842" len="6" sn="73" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED35"/>
+            </Fact>
+            <Fact FactID="146" LeadID="74" FieldsInfo="n0;" pos="7926" len="6" sn="74" fw="11" lw="11">
+                <type val="FEED"/>
+                <data val="FEED35"/>
+            </Fact>
+            <Fact FactID="147" LeadID="75" FieldsInfo="n0;" pos="7951" len="3" sn="75" fw="2" lw="2">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="148" LeadID="75" FieldsInfo="n1;" pos="8050" len="6" sn="75" fw="18" lw="18">
+                <type val="FEED"/>
+                <data val="FEED35"/>
+            </Fact>
+            <Fact FactID="149" LeadID="76" FieldsInfo="n0;" pos="8265" len="6" sn="76" fw="33" lw="33">
+                <type val="FEED"/>
+                <data val="FEED36"/>
+            </Fact>
+            <Fact FactID="150" LeadID="77" FieldsInfo="n0;" pos="8325" len="3" sn="77" fw="8" lw="8">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="151" LeadID="77" FieldsInfo="n1;" pos="8372" len="6" sn="77" fw="18" lw="18">
+                <type val="FEED"/>
+                <data val="FEED37"/>
+            </Fact>
+            <Fact FactID="152" LeadID="78" FieldsInfo="n0;" pos="8432" len="6" sn="78" fw="7" lw="7">
+                <type val="FEED"/>
+                <data val="FEED37"/>
+            </Fact>
+            <Fact FactID="153" LeadID="79" FieldsInfo="n0;" pos="8493" len="6" sn="79" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED37"/>
+            </Fact>
+            <Fact FactID="154" LeadID="79" FieldsInfo="n1;" pos="8503" len="6" sn="79" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED37"/>
+            </Fact>
+            <Fact FactID="155" LeadID="79" FieldsInfo="n2;" pos="8513" len="6" sn="79" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED37"/>
+            </Fact>
+            <Fact FactID="156" LeadID="80" FieldsInfo="n0;" pos="8721" len="6" sn="80" fw="26" lw="26">
+                <type val="FEED"/>
+                <data val="FEED38"/>
+            </Fact>
+            <Fact FactID="157" LeadID="80" FieldsInfo="n1;" pos="8731" len="6" sn="80" fw="30" lw="30">
+                <type val="FEED"/>
+                <data val="FEED38"/>
+            </Fact>
+            <Fact FactID="158" LeadID="80" FieldsInfo="n2;" pos="8741" len="6" sn="80" fw="34" lw="34">
+                <type val="FEED"/>
+                <data val="FEED38"/>
+            </Fact>
+            <Fact FactID="159" LeadID="81" FieldsInfo="n0;" pos="8859" len="3" sn="81" fw="14" lw="14">
+                <type val="CITY"/>
+                <data val="УФА"/>
+            </Fact>
+            <Fact FactID="160" LeadID="81" FieldsInfo="n1;" pos="8864" len="6" sn="81" fw="16" lw="16">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="161" LeadID="82" FieldsInfo="n0;" pos="8894" len="6" sn="82" fw="5" lw="5">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="162" LeadID="83" FieldsInfo="n0;" pos="8940" len="7" sn="83" fw="7" lw="7">
+                <type val="EVENT"/>
+                <data val="АКБУЗАТ"/>
+            </Fact>
+            <Fact FactID="163" LeadID="83" FieldsInfo="n1;" pos="8950" len="6" sn="83" fw="9" lw="9">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="164" LeadID="84" FieldsInfo="n0;" pos="8975" len="6" sn="84" fw="4" lw="4">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="165" LeadID="84" FieldsInfo="n1;" pos="8985" len="6" sn="84" fw="8" lw="8">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="166" LeadID="84" FieldsInfo="n2;" pos="8995" len="6" sn="84" fw="12" lw="12">
+                <type val="FEED"/>
+                <data val="FEED39"/>
+            </Fact>
+            <Fact FactID="167" LeadID="85" FieldsInfo="n0;" pos="9072" len="6" sn="85" fw="10" lw="10">
+                <type val="FEED"/>
+                <data val="FEED40"/>
+            </Fact>
+            <Fact FactID="168" LeadID="86" FieldsInfo="n0;" pos="9198" len="6" sn="86" fw="22" lw="22">
+                <type val="FEED"/>
+                <data val="FEED40"/>
+            </Fact>
+            <Fact FactID="169" LeadID="86" FieldsInfo="n1;" pos="9208" len="6" sn="86" fw="26" lw="26">
+                <type val="FEED"/>
+                <data val="FEED40"/>
+            </Fact>
+            <Fact FactID="170" LeadID="86" FieldsInfo="n2;" pos="9218" len="6" sn="86" fw="30" lw="30">
+                <type val="FEED"/>
+                <data val="FEED40"/>
+            </Fact>
+        </facts>
+        <Leads>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;1 июня, в Международный день защиты детей, на площади &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салавата&lt;/d&gt; Юлаева пройдет донорская акция, организованная по инициативе Правительства Башкортостана ( &lt;d n1=&quot;&quot; lemma=&quot;feed1&quot;&gt;feed1&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="0"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В этот день кровь сдадут члены Правительства ( &lt;d n0=&quot;&quot; lemma=&quot;feed1&quot;&gt;feed1&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed1&quot;&gt;feed1&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed1&quot;&gt;feed1&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="1"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В Башкортостане во время сдачи Единого государственного экзамена по русскому языку зафиксировано семь нарушений ( &lt;d n0=&quot;&quot; lemma=&quot;feed2&quot;&gt;feed2&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="2"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Все они связаны с размещением контрольно-измерительных материалов ( КИМ ) в интернете, ( &lt;d n0=&quot;&quot; lemma=&quot;feed2&quot;&gt;feed2&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed2&quot;&gt;feed2&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed2&quot;&gt;feed2&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="3"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;33-летний голкипер &lt;d n2=&quot;&quot; lemma=&quot;Атлант&quot;&gt;&quot;Атланта&quot;&lt;/d&gt; &lt;d n0=&quot;&quot; lemma=&quot;Алексей Волков&quot;&gt;Алексей Волков&lt;/d&gt; продолжит карьеру в &lt;d n1=&quot;&quot; lemma=&quot;Салават Юлаеве&quot;&gt;&quot;Салавате Юлаеве&quot;&lt;/d&gt;, информирует официальный сайт уфимцев ( &lt;d n3=&quot;&quot; lemma=&quot;feed3&quot;&gt;feed3&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="4"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В Ледовом дворце &lt;d n0=&quot;&quot; lemma=&quot;Уфа-Арен&quot;&gt;&quot;Уфа-Арена&quot;&lt;/d&gt; - крупнейшем спорткомплексе республики, силовые структуры провели учебную контртеррористическую операцию ( &lt;d n1=&quot;&quot; lemma=&quot;feed4&quot;&gt;feed4&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="5"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;&quot;По легенде, люди в камуфляже подъехали к &lt;d n0=&quot;&quot; lemma=&quot;Уфа-Арен&quot;&gt;&quot;Уфа-Арене&quot;&lt;/d&gt; на ( &lt;d n1=&quot;&quot; lemma=&quot;feed4&quot;&gt;feed4&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed4&quot;&gt;feed4&lt;/d&gt; ). ( &lt;d n3=&quot;&quot; lemma=&quot;feed4&quot;&gt;feed4&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="6"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Конкурс видеороликов &lt;d n0=&quot;&quot; lemma=&quot;Самый-самый&quot;&gt;&quot;Самый-самый&quot;&lt;/d&gt; пройдет в Башкортостане до 10 июня, сообщает пресс-служба Агентства печати и средств массовой информации республики ( &lt;d n1=&quot;&quot; lemma=&quot;feed5&quot;&gt;feed5&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="7"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;На конкурс принимаются видеоролики, снятые ( &lt;d n0=&quot;&quot; lemma=&quot;feed5&quot;&gt;feed5&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed5&quot;&gt;feed5&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed5&quot;&gt;feed5&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="8"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Сборная команда Башкортостана в составе 4 гимнасток заняла 1 место ( &lt;d n0=&quot;&quot; lemma=&quot;feed6&quot;&gt;feed6&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="9"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Впервые в &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфе&lt;/d&gt; высажено 560 тысяч тюльпанов, что придало улицам более эстетичный и нарядный вид ( &lt;d n1=&quot;&quot; lemma=&quot;feed7&quot;&gt;feed7&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="10"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Об этом рассказал на оперативном совещании начальник Управления коммунального хозяйства и благоустройства Администрации ГО г ( &lt;d n0=&quot;&quot; lemma=&quot;feed7&quot;&gt;feed7&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="11"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;&lt;d n1=&quot;&quot; lemma=&quot;уфа&quot;&gt;Уфа&lt;/d&gt; &lt;d n0=&quot;&quot; lemma=&quot;Владимир Васильевич Чернов&quot;&gt;Владимир Васильевич Чернов&lt;/d&gt; ( &lt;d n2=&quot;&quot; lemma=&quot;feed7&quot;&gt;feed7&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="12"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;95-я годовщина пограничных войск ( &lt;d n0=&quot;&quot; lemma=&quot;feed8&quot;&gt;feed8&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="13"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В Башкортостане статус закона обрел проект, предполагающий увеличение размера единовременного пособия до 500 тысяч рублей для граждан, усыновивших ребенка-инвалида ( &lt;d n0=&quot;&quot; lemma=&quot;feed9&quot;&gt;feed9&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="14"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Законопроект республики &quot;О ( &lt;d n0=&quot;&quot; lemma=&quot;feed9&quot;&gt;feed9&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed9&quot;&gt;feed9&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed9&quot;&gt;feed9&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="15"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;За четыре месяца 2013 года в Башкортостане родилось 17358 детей, 8905 из них - мальчики и 8453 - девочки ( &lt;d n0=&quot;&quot; lemma=&quot;feed10&quot;&gt;feed10&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="16"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Сразу двое малышей появилось в 176 семьях, сообщили в региональном отделении Фонда ( &lt;d n0=&quot;&quot; lemma=&quot;feed10&quot;&gt;feed10&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed10&quot;&gt;feed10&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed10&quot;&gt;feed10&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="17"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Церемония награждения победителей IV республиканского конкурса &quot;Лучший библиотечный сайт РБ&quot; состоится в среду, 29 мая, в Национальной библиотеке имени А ( &lt;d n0=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="18"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;- З ( &lt;d n0=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="19"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Валиди ( &lt;d n0=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="20"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В состязании, проходившем с ( &lt;d n0=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed11&quot;&gt;feed11&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="21"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Будут работать экомобиль, передвижной пункт сбора макулатуры и пункт сбора ПЭТ бутылок ( &lt;d n0=&quot;&quot; lemma=&quot;feed12&quot;&gt;feed12&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="22"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Объем бюджетных ассигнований на реализацию республиканских целевых программ в 2012 году составил 64,8 млрд рублей ( &lt;d n0=&quot;&quot; lemma=&quot;feed13&quot;&gt;feed13&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="23"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Всего из региональной казны было профинансировано 44 программы ( &lt;d n0=&quot;&quot; lemma=&quot;feed13&quot;&gt;feed13&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="24"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Отчет Правительства ( &lt;d n0=&quot;&quot; lemma=&quot;feed13&quot;&gt;feed13&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed13&quot;&gt;feed13&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed13&quot;&gt;feed13&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="25"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Уфимские клумбы впервые украсили клумбами из более чем полумиллиона тюльпанов ( &lt;d n0=&quot;&quot; lemma=&quot;feed14&quot;&gt;feed14&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="26"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Всего в столице Башкирии было высажено 560 тысяч цветочных луковиц ( &lt;d n0=&quot;&quot; lemma=&quot;feed14&quot;&gt;feed14&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="27"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Об этом 28 мая сообщают &lt;d n0=&quot;&quot; lemma=&quot;Уфимский ведомости&quot;&gt;&quot;Уфимские ведомости&quot;&lt;/d&gt; со ссылкой на замглавы администрации &lt;d n2=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt; &lt;d n1=&quot;&quot; lemma=&quot;Сынтимир Баязитов&quot;&gt;Сынтимира Баязитова&lt;/d&gt; ( &lt;d n3=&quot;&quot; lemma=&quot;feed14&quot;&gt;feed14&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="28"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Всего летом столицу Башкирии будет украшать свыше миллиона растений – до 10 июня на городских клумбах посадят 1 млн 550 тысяч цветов ( &lt;d n0=&quot;&quot; lemma=&quot;feed15&quot;&gt;feed15&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="29"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;По мнению уфимского градоначальника &lt;d n0=&quot;&quot; lemma=&quot;Ирек Ялалов&quot;&gt;Ирека Ялалова&lt;/d&gt;, затраты на саженцы небольшие, а город существенно преобразился ( &lt;d n1=&quot;&quot; lemma=&quot;feed15&quot;&gt;feed15&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="30"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Оперативный персонал электростанций Башкортостана участвует в конкурсе профессионального мастерства ( &lt;d n0=&quot;&quot; lemma=&quot;feed16&quot;&gt;feed16&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="31"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Финальные соревнования проходят в эти дни в Учебно-тренировочном комбинате &lt;d n0=&quot;&quot; lemma=&quot;Башкирэнерго&quot;&gt;&quot;Башкирэнерго&quot;&lt;/d&gt; ( &lt;d n1=&quot;&quot; lemma=&quot;feed16&quot;&gt;feed16&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="32"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Как ( &lt;d n0=&quot;&quot; lemma=&quot;feed16&quot;&gt;feed16&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed16&quot;&gt;feed16&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed16&quot;&gt;feed16&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="33"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В парке культуры и отдыха им ( &lt;d n0=&quot;&quot; lemma=&quot;feed17&quot;&gt;feed17&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="34"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Ю ( &lt;d n0=&quot;&quot; lemma=&quot;feed17&quot;&gt;feed17&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="35"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;А ( &lt;d n0=&quot;&quot; lemma=&quot;feed17&quot;&gt;feed17&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="36"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Гагарина пройдут праздничные мероприятия В &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салавате&lt;/d&gt; в понедельник вечером произошел пожар в цехе по производству бутиловых спиртов завода &lt;d n1=&quot;&quot; lemma=&quot;Мономер&quot;&gt;&quot;Мономер&quot;&lt;/d&gt;, принадлежащего концерну &quot;Газпром нефтехим &lt;d n2=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салават&quot;&lt;/d&gt; ( &lt;d n3=&quot;&quot; lemma=&quot;feed18&quot;&gt;feed18&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="37"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Как сообщили в МЧС, пожар был ликвидирован в 21 час 17 минут ( &lt;d n0=&quot;&quot; lemma=&quot;feed18&quot;&gt;feed18&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="38"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфе&lt;/d&gt; проходит 63-е заседание Государственного Собрания — Курултая Башкортостана ( &lt;d n1=&quot;&quot; lemma=&quot;feed19&quot;&gt;feed19&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="39"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В повестке дня значится 37 вопросов ( &lt;d n0=&quot;&quot; lemma=&quot;feed19&quot;&gt;feed19&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="40"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Законодатели заслушают отчет Правительства РБ о ходе реализации республиканских ( &lt;d n0=&quot;&quot; lemma=&quot;feed19&quot;&gt;feed19&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed19&quot;&gt;feed19&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed19&quot;&gt;feed19&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="41"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В России 28 мая отмечается День пограничника ( &lt;d n0=&quot;&quot; lemma=&quot;feed20&quot;&gt;feed20&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="42"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В этом году воины в зеленых фуражках, стоящие на рубежах Отечества, отмечают знаменательную дату - 95-летие со дня образования пограничной охраны ( &lt;d n0=&quot;&quot; lemma=&quot;feed20&quot;&gt;feed20&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed20&quot;&gt;feed20&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed20&quot;&gt;feed20&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="43"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфе&lt;/d&gt; на трассе &lt;d n1=&quot;&quot; lemma=&quot;Тимашево&quot;&gt;&quot;Тимашево&quot;&lt;/d&gt; стартовал очередной открытый лично-командный чемпионат Башкортостана по мотокроссу ( &lt;d n2=&quot;&quot; lemma=&quot;feed21&quot;&gt;feed21&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="44"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Более 120 спортсменов из городов республики, а также Татарстана, Удмуртии, Челябинской, ( &lt;d n0=&quot;&quot; lemma=&quot;feed21&quot;&gt;feed21&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed21&quot;&gt;feed21&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed21&quot;&gt;feed21&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="45"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Напомним, вчера, 27 мая, в пять часов вечера на пульт Единой дежурно-диспетчерской службы &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салавата&lt;/d&gt; поступил сигнал о возгорании продукта нефтепереработки - пропилена в цехе № 52 ( производство бутиловых спиртов ) завода &lt;d n1=&quot;&quot; lemma=&quot;Мономер&quot;&gt;&quot;Мономер&quot;&lt;/d&gt; ( http: / / proufu ( &lt;d n2=&quot;&quot; lemma=&quot;feed22&quot;&gt;feed22&lt;/d&gt; ). ru / proisshestvija / item / 26238-v-bashkirii-na-neftezavode-proizoshel-krupnyj-p ), который находится на территории &quot;Газпром нефтехим &lt;d n3=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салават&quot;&lt;/d&gt;&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="46"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В этом году оформление &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt; отличается от привычного ( &lt;d n1=&quot;&quot; lemma=&quot;feed23&quot;&gt;feed23&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="47"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салавате&lt;/d&gt; в понедельник вечером произошел пожар в цехе по производству бутиловых спиртов завода &lt;d n1=&quot;&quot; lemma=&quot;Мономер&quot;&gt;&quot;Мономер&quot;&lt;/d&gt;, принадлежащего концерну &quot;Газпром нефтехим &lt;d n2=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салават&quot;&lt;/d&gt; ( &lt;d n3=&quot;&quot; lemma=&quot;feed24&quot;&gt;feed24&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="48"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Как сообщили в МЧС, пожар был ( &lt;d n0=&quot;&quot; lemma=&quot;feed24&quot;&gt;feed24&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed24&quot;&gt;feed24&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed24&quot;&gt;feed24&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="49"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В &lt;d n0=&quot;&quot; lemma=&quot;Бирск&quot;&gt;Бирске&lt;/d&gt; осужден 26-летний мужчина за уклонение от административного надзора, сообщили ИА Стерлеград в Бирской межрайонной прокуратуре ( &lt;d n1=&quot;&quot; lemma=&quot;feed25&quot;&gt;feed25&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="50"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;На следующей неделе, в понедельник, 3 июня, в &amp;amp; nbsp; &lt;d n0=&quot;&quot; lemma=&quot;Нефтекамск&quot;&gt;Нефтекамске&lt;/d&gt; в 14:00 в актовом зале Межрайонной ИФНС &amp;amp; nbsp; состоится семинар для налогоплательщиков ( &lt;d n1=&quot;&quot; lemma=&quot;feed26&quot;&gt;feed26&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="51"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Народные гуляния пройдут в районах с 1 по 15 июня ( &lt;d n0=&quot;&quot; lemma=&quot;feed27&quot;&gt;feed27&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="52"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Сабантуи в Башкирии в этом году пройдут с 1 по 15 июня ( &lt;d n0=&quot;&quot; lemma=&quot;feed27&quot;&gt;feed27&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="53"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;График утвержден указом президента Башкирии &lt;d n0=&quot;&quot; lemma=&quot;Рустэм Хамитов&quot;&gt;Рустэма Хамитова&lt;/d&gt; ( &lt;d n1=&quot;&quot; lemma=&quot;feed27&quot;&gt;feed27&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="54"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Раньше всех – 1 июня – сабантуи пройдут в 11 районах ( &lt;d n0=&quot;&quot; lemma=&quot;feed27&quot;&gt;feed27&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="55"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В большинстве же из них, 39 из 54, народные гуляния состоятся 8 июня ( &lt;d n0=&quot;&quot; lemma=&quot;feed27&quot;&gt;feed27&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="56"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Обзор минувшей недели: &amp;amp; nbsp; конец школьного учебного года и первые ЕГЭ, геморрагическая лихорадка и День защиты детей, обзор информации дежурной части полиции и ДТП на автобусной остановке, пожары, сбор налогов и безработица в &lt;d n0=&quot;&quot; lemma=&quot;Нефтекамск&quot;&gt;Нефтекамске&lt;/d&gt; ( &lt;d n1=&quot;&quot; lemma=&quot;feed28&quot;&gt;feed28&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="57"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Вчера в пять часов вечера на пульт Единой дежурно-диспетчерской службы &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салавата&lt;/d&gt; поступил сигнал о возгорании продуктов нефтепереработки на заводе &lt;d n1=&quot;&quot; lemma=&quot;Мономер&quot;&gt;&quot;Мономер&quot;&lt;/d&gt; (&quot; Газпром нефтехим &lt;d n2=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салават&quot;&lt;/d&gt; ) ( &lt;d n3=&quot;&quot; lemma=&quot;feed29&quot;&gt;feed29&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="58"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Международный день защиты детей отмечается ежегодно 1 июня ( &lt;d n0=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="59"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Этот праздник был учрежден в ноябре 1949 года в столице Франции городе Париже решением конгресса Международной демократической федерации женщин ( &lt;d n0=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="60"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Впервые Международный день защиты детей отмечался в 1950-м году ( &lt;d n0=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="61"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В честь праздника в Стерлитамаке запланированы специальные мероприятия ( список может быть обновлен ) ( &lt;d n0=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="62"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В 11-00 в спортивном зале &lt;d n0=&quot;&quot; lemma=&quot;СДЮСШОР&quot;&gt;&quot;СДЮСШОР&quot;&lt;/d&gt; пройдет [ ( &lt;d n1=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ). ( &lt;d n3=&quot;&quot; lemma=&quot;feed30&quot;&gt;feed30&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="63"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;] Согласно закону &quot;Об основных гарантиях прав ребенка в Республике Башкортостан&quot;, нахождение детей, не достигших возраста 17 лет, в ночное время без сопровождения родителей в общественных местах не допускается ( &lt;d n0=&quot;&quot; lemma=&quot;feed31&quot;&gt;feed31&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="64"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В 2009 году по инициативе Президента Российской Федерации &lt;d n0=&quot;&quot; lemma=&quot;Дмитрий Медведев&quot;&gt;Дмитрия Медведева&lt;/d&gt; Государственная Дума Российской Федерации внесла изменения в Федеральный закон &quot;Об основных гарантиях прав ребенка в Российской Федерации&quot;, [ ( &lt;d n1=&quot;&quot; lemma=&quot;feed31&quot;&gt;feed31&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed31&quot;&gt;feed31&lt;/d&gt; ). ( &lt;d n3=&quot;&quot; lemma=&quot;feed31&quot;&gt;feed31&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="65"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;] В цехе № 52 ОАО &quot;Газпром нефтехим &lt;d n0=&quot;&quot; lemma=&quot;Салават&quot;&gt;Салават&quot;&lt;/d&gt; произошло возгарание По швам пошла не только бетонная стена, трещины даже на окнах ( &lt;d n1=&quot;&quot; lemma=&quot;feed33&quot;&gt;feed33&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="66"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В дело вмешалась прокуратура и выиграла суд ( &lt;d n0=&quot;&quot; lemma=&quot;feed33&quot;&gt;feed33&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="67"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Теперь администрация &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt; обязана направить документы в Межведомственную комиссию о признании данного дома непригодным для проживания ( &lt;d n1=&quot;&quot; lemma=&quot;feed33&quot;&gt;feed33&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="68"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Отчаявшиеся жильцы вышли на улицу ( &lt;d n0=&quot;&quot; lemma=&quot;feed33&quot;&gt;feed33&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="69"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфе&lt;/d&gt; администрация города решила укрепить берег реки Белой ( &lt;d n1=&quot;&quot; lemma=&quot;feed34&quot;&gt;feed34&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="70"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Благоустройству подвергнется участок от створа улицы Бельская до железнодорожного моста в Кировском и Ленинском районах ( &lt;d n0=&quot;&quot; lemma=&quot;feed34&quot;&gt;feed34&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="71"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Заказ на проведение работ разместила мэрия &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt;, стоимость – 1,3 млрд рублей ( &lt;d n1=&quot;&quot; lemma=&quot;feed34&quot;&gt;feed34&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="72"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Работы будут проводиться на участке от створа ул ( &lt;d n0=&quot;&quot; lemma=&quot;feed35&quot;&gt;feed35&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="73"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Бельская до железнодорожного моста в Кировском и Ленинском районах города ( &lt;d n0=&quot;&quot; lemma=&quot;feed35&quot;&gt;feed35&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="74"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В администрации &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt; готовы потратить на эти цели более 1,3 миллиарда рублей: такова начальная стоимость контракта ( &lt;d n1=&quot;&quot; lemma=&quot;feed35&quot;&gt;feed35&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="75"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Как сообщили в пресс-службе Башвоенкомата, прием по личным вопросам граждан, проживающих в Октябрьском и Советском районах, а также представителей организаций, предприятий и учреждений, начнется с 10 июня ( &lt;d n0=&quot;&quot; lemma=&quot;feed36&quot;&gt;feed36&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="76"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Фестиваль &quot;Библиотека без границ&quot; пройдет 29 мая в &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфе&lt;/d&gt;, в Центральной городской библиотеке ( ЦГБ ) ( &lt;d n1=&quot;&quot; lemma=&quot;feed37&quot;&gt;feed37&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="77"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Праздник приурочен к Всероссийскому дню библиотек ( &lt;d n0=&quot;&quot; lemma=&quot;feed37&quot;&gt;feed37&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="78"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Сотрудники ЦГБ приглашают всех желающих посетить в ( &lt;d n0=&quot;&quot; lemma=&quot;feed37&quot;&gt;feed37&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed37&quot;&gt;feed37&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed37&quot;&gt;feed37&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="79"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В рамках взаимодействия Правительства Башкортостана и Счетной палаты России по построению в республике механизма контрактной системы, подписан новый План мероприятий совместной рабочей группы на ( &lt;d n0=&quot;&quot; lemma=&quot;feed38&quot;&gt;feed38&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed38&quot;&gt;feed38&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed38&quot;&gt;feed38&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="80"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;3 июня начнет работу новый отдел военного комиссариата Башкортостана по Октябрьскому и Советскому районам &lt;d n0=&quot;&quot; lemma=&quot;Уфа&quot;&gt;Уфы&lt;/d&gt; ( &lt;d n1=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="81"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Он расположен на ул ( &lt;d n0=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="82"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Менделеева, 221, в районе ипподрома &lt;d n0=&quot;&quot; lemma=&quot;Акбузат&quot;&gt;&quot;Акбузат&quot;&lt;/d&gt; ( &lt;d n1=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="83"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Как сообщили в ( &lt;d n0=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed39&quot;&gt;feed39&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="84"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;В Башкортостане звания &quot;Наш любимый врач&quot; удостоены 70 докторов ( &lt;d n0=&quot;&quot; lemma=&quot;feed40&quot;&gt;feed40&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="85"/>
+            <Lead text="&lt;l&gt;&lt;h t=&quot;ya&quot; di=&quot;0&quot; u=&quot;&quot;&gt;&lt;d&gt;2013-09-15 04:52&lt;/d&gt;&lt;s&gt;file&lt;/s&gt;&lt;/h&gt;&lt;b&gt;&lt;s&gt;Среди них 25 педиатров, 20 акушеров-гинекологов, три неонатолога, три хирурга, три невролога, три офтальмолога, три ( &lt;d n0=&quot;&quot; lemma=&quot;feed40&quot;&gt;feed40&lt;/d&gt; ). ( &lt;d n1=&quot;&quot; lemma=&quot;feed40&quot;&gt;feed40&lt;/d&gt; ). ( &lt;d n2=&quot;&quot; lemma=&quot;feed40&quot;&gt;feed40&lt;/d&gt; ).&lt;/s&gt;&lt;/b&gt;&lt;/l&gt;"
+                  id="86"/>
+        </Leads>
+    </document>
+</fdo_objects>
