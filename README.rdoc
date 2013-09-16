@@ -1,3 +1,8 @@
 == Yandex Hackaton project
 
-== Add using data and links to them!!!
+Overview: http://city-dict.herokuapp.com/presentation.html
+
+API site: http://city-dict.herokuapp.com
+
+=== License
+Under MIT, see LICENSE
