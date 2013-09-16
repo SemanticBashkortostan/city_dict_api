@@ -1,27 +1,34 @@
-<div id="wrapper" xmlns="http://www.w3.org/1999/html">
-       <!-- header -->
-       <header  id="header">
-           <div class="shell">
-               <a href="/" class="logo">API базы фактов по городам Башкортостана</a>
-           </div>
-       </header>
-       <!-- main -->
-       <div class="main">
-           <div class="shell">
-   <section id="introduction" class="single-page scrollblock">
-       <h2>Введение</h2>
-       <p>Базы фактов по городам Башкортостана позволяет получить различные факты </p>
-   </section>
-   <section id="addapi" class="single-page scrollblock">
-       <h2>Формат ответа</h2>
-       <p>В зависимости от расширения пути URL - JSON или XML. Например, /cities.xml, /cities.json.</p>
-   </section>
+<div id="wrapper">
+  <!-- header -->
+  <header id="header">
+    <div class="shell">
+      <%= link_to "API базы фактов по городам Башкортостана", root_path, class: "logo" %>
+    </div>
+  </header>
+  <!-- main -->
+  <div class="main">
+    <div class="shell">
+      <br/>
+      <h3><%= link_to "О проекте", "/presentation.html" %></h3>
+      <section id="introduction" class="single-page scrollblock">
+        <h2>Введение</h2>
 
-   <section id="services" class="single-page scrollblock">
-       <h2>API</h2>
-       <h3>/cities.(json|xml)</h3>
-       <p>Возвращает список городов. Формат выдачи: XML или JSON.</p>
-       <p>Пример: /cities.json</p>
+        <p>Базы фактов по городам Башкортостана позволяет получить различные факты </p>
+      </section>
+      <section id="addapi" class="single-page scrollblock">
+        <h2>Формат ответа</h2>
+
+        <p>В зависимости от расширения пути URL - JSON или XML. Например, /cities.xml, /cities.json.</p>
+      </section>
+
+      <section id="services" class="single-page scrollblock">
+        <h2>API</h2>
+
+        <h3>/cities.(json|xml)</h3>
+
+        <p>Возвращает список городов. Формат выдачи: XML или JSON.</p>
+
+        <p>Пример: /cities.json</p>
            <pre>
 [
    {
@@ -33,24 +40,29 @@
    }
 ]
                        </pre>
-           </section>
+      </section>
 
-<section id="services" class="single-page scrollblock">
-    <h3>/types.(json|xml)</h3>
-    <p>Возвращает список категории.
-    Формат выдачи: XML или JSON.</p>
-    <p>Пример: /types.json</p>
+      <section id="services" class="single-page scrollblock">
+        <h3>/types.(json|xml)</h3>
+
+        <p>Возвращает список категории.
+          Формат выдачи: XML или JSON.</p>
+
+        <p>Пример: /types.json</p>
     <pre>
       ["fuel","nightclub","university"]
     </pre>
-</section>
+      </section>
 
-<section id="services" class="single-page scrollblock">
-    <h3>/cities/:city_id/words.(json|xml)</h3>
-    <p>Возвращает список фактов с метаданными для определенного города.
-      Формат выдачи: XML или JSON.</p>
-    <p>Возможный дополнительный параметр: type - название категории.</p>
-    <p>Пример: /cities/3/words.xml?type=school </p>
+      <section id="services" class="single-page scrollblock">
+        <h3>/cities/:city_id/words.(json|xml)</h3>
+
+        <p>Возвращает список фактов с метаданными для определенного города.
+          Формат выдачи: XML или JSON.</p>
+
+        <p>Возможный дополнительный параметр: type - название категории.</p>
+
+        <p>Пример: /cities/3/words.xml?type=school </p>
     <pre>
 [
   {
@@ -70,12 +82,12 @@
   }
 ]
     </pre>
-</section>
-           </div>
-       </div>
-<div  id="footer">
-       <div class="shell">
-           <p class="copy">&copy; Яндекс Хакатон 2013</p>
-       </div>
+      </section>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="shell">
+      <p class="copy"><%= link_to "Яндекс Хакатон 2013", "http://events.yandex.ru/events/meetings/hack/" %></p>
+    </div>
+  </div>
 </div>
-   <script type="text/javascript" src="js/site.js"></script>
