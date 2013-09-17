@@ -3,6 +3,9 @@ class VocabularyEntry < ActiveRecord::Base
 
   serialize :metadata, ActiveRecord::Coders::Hstore
 
+  PAGINATES_COUNT = 30
+  paginates_per PAGINATES_COUNT
+
   belongs_to :city
 
   validates :city_id, :presence => true
@@ -19,6 +22,11 @@ class VocabularyEntry < ActiveRecord::Base
     # "doctors", "arts_centre", "dentist", "bar", "fountain", "pub", "nightclub", "atm",
     # "fire_station", "swimming_pool", "grave_yard", "bench", "driving_school", "register_office", "courthouse",
     # "recycling", "taxi", "townhall", "social_facility", "prison", "sanatorium", "bicycle_rental", "community_centre"]
+  end
+
+
+  def to_xml *args
+    super
   end
 
 

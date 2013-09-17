@@ -3,11 +3,12 @@ class WordsController < ApplicationController
   def index
     words = City.find( params[:city_id] ).vocabulary_entries
     words = words.where("metadata -> 'type' = :value", value: params[:type]) if params[:type]
-    words = words.page(params[:page])
+    @words = words.page(params[:page])
+    @pages_data = {:pages_count => @words.total_pages, :per_page => VocabularyEntry::PAGINATES_COUNT}
 
     respond_to do |format|
-      format.xml  { render xml: words}
-      format.json { render json: words}
+      format.xml
+      format.json
     end
   end
 
