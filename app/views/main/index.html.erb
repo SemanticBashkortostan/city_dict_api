@@ -13,7 +13,7 @@
       <section id="introduction" class="single-page scrollblock">
         <h2>Введение</h2>
 
-        <p>Базы фактов по городам Башкортостана позволяет получить различные факты </p>
+        <p>Базы фактов по городам Башкортостана позволяет получать различные факты </p>
       </section>
       <section id="addapi" class="single-page scrollblock">
         <h2>Формат ответа</h2>
@@ -53,7 +53,7 @@
       <section id="services" class="single-page scrollblock">
         <h3>/types.(json|xml)</h3>
 
-        <p>Возвращает список категории.
+        <p>Возвращает список категорий.
           Формат выдачи: XML или JSON.</p>
 
         <p>Пример: /types.json</p>
@@ -72,23 +72,24 @@
 
         <p>Пример: /cities/3/words.xml?type=school </p>
     <pre>
-[
-  {
-    "city_id":1,
-    "created_at":"2013-09-15T00:28:34Z",
-    "id":1337,
-    "metadata":
-      {
-        "type":school,
-        "osm_id":"334371777",
-        "bounding_box": "{:top=>53.4731, :left=>55.9502, :bottom=>53.3999, :right=>56.1322}"
-      },
-    "name":"Ишимбай",
-    "source":"osm",
-    "updated_at":"2013-09-15T00:28:34Z",
-    "url":null
-  }
-]
+{
+  "per_page": 30,
+  "pages_count": 6,
+  "words": [
+    {
+      "id": 2881,
+      "city_id": 3,
+      "name": "Башкирская гимназия № 140",
+      "url": null,
+      "source": "osm",
+      "metadata": {
+        "type": "school",
+        "osm_id": "42217243",
+        "bounding_box": "{:top=>54.8943, :left=>55.7638, :bottom=>54.5258, :right=>56.21}"
+      }
+    }
+  ]
+}
     </pre>
       </section>
     </div>
