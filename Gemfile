@@ -32,14 +32,19 @@ gem "dbpedia"
 gem "sparql-client"
 gem "rdf"
 
-gem 'rails_12factor', group: :production
+group :production do 
+	gem 'rails_12factor' 
+	gem 'unicorn'
+end
 
-gem 'thin'
+
+gem 'thin', group: :development
 
 gem 'kaminari'
 
 gem 'rabl-rails'
 
+gem 'capistrano'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
