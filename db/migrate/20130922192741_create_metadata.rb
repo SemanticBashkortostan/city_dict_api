@@ -15,10 +15,14 @@ class CreateMetadata < ActiveRecord::Migration
     add_index :metadata, :vocabulary_entry_id
     add_index :metadata, :type_name  
 
+    add_column :vocabulary_entries, :normalized_name, :string
+    add_index :vocabulary_entries, :normalized_name
+    #remove_column :vocabulary_entries, :metadata
     #remove_columns :vocabulary_entries, :metadata, :source, :type, :city_id, :url    
   end
 
   def down
   	drop_table :metadata    
+    add_column :vocabulary_entries, :metadata, :hstore
   end
 end

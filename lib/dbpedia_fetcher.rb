@@ -95,13 +95,23 @@ class DbpediaFetcher
           end
         end
 
-        rus_name = get_rus_name(ru_url) if ru_url
-        ve = VocabularyEntry.new name: rus_name, city_id: city.id, source: :dbpedia
-        ve.url = url
-        ve.metadata["type"] = type if type
-        ve.metadata["ru_url"] = ru_url if ru_url
+        if ru_url
+          rus_name = get_rus_name(ru_url)         
+          begin 
+          
+          ve = VocabularyEntry.create! name: rus_name
 
-        ve.save!
+          metadata = Metadata.new source: :dbpedia, city_id: city.id, vocabulary_entry_id: ve.id
+          metadata.type_name = type if type 
+          metadata.other["ru_url"] = ru_url if ru_url
+          metadata.url = url          
+          metadata.save! 
+          
+          rescue Exception => e 
+            puts "Exception in DbpediaFetcher#fill_db!: #{e}"
+          end
+        end
+
       end
     end
   end

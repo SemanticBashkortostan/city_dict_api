@@ -4,16 +4,32 @@ class VocabularyEntry < ActiveRecord::Base
   PAGINATES_COUNT = 30
   paginates_per PAGINATES_COUNT
 
-  validate :city_name_and_type_uniqueness
+  has_many :metadata, :class_name => "Metadata"
+  
+  validate :normalized_name_uniqueness
 
 
-  private
+  before_save :set_normalized_name
 
 
-  def city_name_and_type_uniqueness
-    maybe_similars = VocabularyEntry.where(:city_id => city_id, :name => name)
-    if maybe_similars.collect{ |ve| ve.metadata['type'] }.include?(self.type) 
-      errors.add(:base, "City_id and name and type is not uniqueness") 
+  private 
+
+
+  def normalized_name_uniqueness
+    if VocabularyEntry.find_by_normalized_name( get_normalized_name ) 
+      p VocabularyEntry.find_by_normalized_name( get_normalized_name )
+      errors.add(:normalized_name, "Uniqueness normalized_name constraint") 
     end
   end
+
+
+  def set_normalized_name
+    self.normalized_name ||= get_normalized_name 
+  end
+
+
+  def get_normalized_name
+    name.mb_chars.squish.downcase
+  end
+
 end
