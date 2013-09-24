@@ -22,8 +22,15 @@ class TomitaFactsExtractor
     hash = {}
     facts_hash.each do |k,v|
       new_root = v["FEED"].first
+
+      next unless new_root
+
+      feed_id_str = v["FEED"].first.dup
+      feed_id_str["FEED"] = ""
+      feed_id = feed_id_str.to_i          
+
       v.delete("FEED")
-      hash[new_root] = v
+      hash[new_root] = v.merge(:feed_id => feed_id)      
     end
 
     last_hash = {}
@@ -44,12 +51,18 @@ class TomitaFactsExtractor
     tomita = TomitaFactsExtractor.new filename
     tomita.get_facts.each do |city_name, set_of_hash|
       set_of_hash.each do |hash|
+        next if hash.keys.length < 2
         hash.each do |type, values|
+          next if type == :feed_id
           values.each do |named_entity|
-            ve = VocabularyEntry.new name: named_entity, city_id: find_city(city_name), source: :tomita
-            ve.url = "http:://rbcitynews.ru"
-            ve.metadata["type"] = type
-            ve.save
+            p [ named_entity, find_city(city_name), hash[:feed_id]]
+            gets
+            ve = VocabularyEntry.find_or_create_by_name named_entity
+             
+            # ve = VocabularyEntry.new name: named_entity, city_id: find_city(city_name), source: :tomita
+            # ve.url = "http:://rbcitynews.ru/feeds/#{hash[:feed_id]}"
+            # ve.metadata["type"] = type
+            # ve.save
           end
         end
       end
