@@ -4,7 +4,7 @@ class VocabularyEntry < ActiveRecord::Base
   PAGINATES_COUNT = 30
   paginates_per PAGINATES_COUNT
 
-  has_many :metadata, :class_name => "Metadata"
+  has_many :metadata, :class_name => "Metadata", :dependent => :destroy
   
   validate :normalized_name_uniqueness
   validates :name, :presence => true

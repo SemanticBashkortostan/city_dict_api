@@ -57,24 +57,33 @@ class OsmFetcher
   end
 
 
-  #TODO: Add version of .osm file!!!
+  #TODO: Add version of .osm file!!! But why?
   def self.fill_db!
     osm_arr = [
-                      #["Sterlitamak", "sterlitamak.osm", OsmFetcher::STERLITAMAK_BOUNDING_BOX],
-                      #["Salavat", "salavat.osm", OsmFetcher::SALAVAT_BOUNDING_BOX],
-                      #["Neftekamsk", "neftekamsk.osm", OsmFetcher::NEFTEKAMSK_BOUNDING_BOX],
-                      #["Ishimbay", "ishimbay.osm", OsmFetcher::ISHIMBAY_BOUNDING_BOX],
+                      ["Sterlitamak", "sterlitamak.osm", OsmFetcher::STERLITAMAK_BOUNDING_BOX],
+                      ["Salavat", "salavat.osm", OsmFetcher::SALAVAT_BOUNDING_BOX],
+                      ["Neftekamsk", "neftekamsk.osm", OsmFetcher::NEFTEKAMSK_BOUNDING_BOX],
+                      ["Ishimbay", "ishimbay.osm", OsmFetcher::ISHIMBAY_BOUNDING_BOX],
                       ["Ufa", "ufa.osm", OsmFetcher::UFA_BOUNDING_BOX]
                ]
 
+    normalized_city_names_set = City.pluck(:name).map{|name| VocabularyEntry.get_normalized_name(name) }.to_set
     osm_arr.each do |(city_eng_name, filename, bounding_box)|
       osm = OsmFetcher.new bounding_box, filename
       osm.get_features.each do |name, amenity, osm_id|
-        ve = VocabularyEntry.new name: name, city_id: City.find_by_eng_name(city_eng_name).id, source: :osm
-        ve.metadata['type'] = amenity
-        ve.metadata['osm_id'] = osm_id
-        ve.metadata['bounding_box'] = bounding_box.to_s
-        ve.save!
+        next if normalized_city_names_set.include?( VocabularyEntry.get_normalized_name( name ) )
+        token = VocabularyEntry.find_or_create_by_name_or_normalized_name name
+
+        city_id = City.find_by_eng_name(city_eng_name).id
+        type = amenity
+        metadata =  Metadata.find_or_create_by_city_id_and_source_and_type_name_and_vocabulary_entry_id(
+                city_id, :osm, type, token.id )
+
+        unless metadata.other["osm_id"] || metadata.other["bounding_box"]
+          metadata.other["osm_id"] = osm_id
+          metadata.other["bounding_box"] = bounding_box.to_s
+          metadata.save!                
+        end                        
       end
     end
   end
