@@ -4,7 +4,7 @@ class MainController < ApplicationController
 
 
   def types
-    @types = VocabularyEntry.all.collect{ |e| e['metadata']['type'] }.uniq
+    @types = Metadata.pluck(:type_name).uniq
     respond_to do |format|
       format.xml  { render xml: @types}
       format.json { render json: @types}
@@ -13,19 +13,19 @@ class MainController < ApplicationController
 
 
   def word
-    @found = VocabularyEntry.where(:name => [params[:name], params[:name].mb_chars.capitalize.to_s]).first
+    @word = VocabularyEntry.where(:name => [params[:name], params[:name].mb_chars.capitalize.to_s]).first
     respond_to do |format|
-      format.json{ render json: @found }
-      format.xml{ render xml: @found }
+      format.json
+      format.xml
     end
   end
 
 
   def all_data
-    @ves = VocabularyEntry.all
+    @words = VocabularyEntry.all
     respond_to do |format|
-      format.json{ render json: @ves }
-      format.xml{ render xml: @ves }
+      format.json
+      format.xml
     end
   end
 end

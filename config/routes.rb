@@ -5,6 +5,7 @@ CityDictApi::Application.routes.draw do
     resources :words do
     end
   end
+  resources :words, :only => [:show]
 
   match '/types' => "main#types"
   match "/word" => "main#word"

@@ -1,8 +1,8 @@
 class WordsController < ApplicationController
 
-  def index
-    words = City.find( params[:city_id] ).vocabulary_entries
-    words = words.where("metadata -> 'type' = :value", value: params[:type]) if params[:type]
+  def index    
+    words = VocabularyEntry.includes(:metadata).where( :metadata => { :city_id => params[:city_id] } )
+    words = words.where(:type_name => params[:type]) if params[:type].present?    
     @words = words.page(params[:page])
     @pages_data = {:pages_count => @words.total_pages, :per_page => VocabularyEntry::PAGINATES_COUNT}
 
@@ -14,11 +14,11 @@ class WordsController < ApplicationController
 
 
   def show
-    word = VocabularyEntry.find_by_id_and_city_id(params[:id], params[:city_id])
-
+    @word = VocabularyEntry.find(params[:id])
+    
     respond_to do |format|
-      format.xml  { render xml: word}
-      format.json { render json: word}
+      format.xml 
+      format.json
     end
   end
 end
