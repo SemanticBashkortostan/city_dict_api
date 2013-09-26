@@ -59,7 +59,7 @@ class TomitaFactsExtractor
             if city_id 
               token = VocabularyEntry.find_or_create_by_name_or_normalized_name named_entity              
               
-              url = "http:://rbcitynews.ru/feeds/#{hash[:feed_id]}"
+              url = "http://rbcitynews.ru/feeds/#{hash[:feed_id]}"
 
               metadata = Metadata.find_or_create_by_city_id_and_source_and_url_and_type_name_and_vocabulary_entry_id(
                 city_id, :tomita, url, type, token.id )                
