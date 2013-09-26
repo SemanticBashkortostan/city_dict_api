@@ -97,18 +97,14 @@ class DbpediaFetcher
 
         if ru_url
           rus_name = get_rus_name(ru_url)         
-          begin 
-          
-          ve = VocabularyEntry.create! name: rus_name
+                           
+          token = VocabularyEntry.find_or_create_by_name_or_normalized_name rus_name
 
-          metadata = Metadata.new source: :dbpedia, city_id: city.id, vocabulary_entry_id: ve.id
-          metadata.type_name = type if type 
-          metadata.other["ru_url"] = ru_url if ru_url
-          metadata.url = url          
-          metadata.save! 
-          
-          rescue Exception => e 
-            puts "Exception in DbpediaFetcher#fill_db!: #{e}"
+          metadata = Metadata.find_or_create_by_source_and_city_id_and_type_name_and_url_and_vocabulary_entry_id(
+            :dbpedia, city.id, type, url, token.id )
+          if ru_url && metadata.other["ru_url"].nil? 
+            metadata.other["ru_url"] = ru_url  
+            metadata.save!                 
           end
         end
 
@@ -121,7 +117,7 @@ class DbpediaFetcher
 
 
   def get_rus_name ru_url
-    ru_url.split("/").last.tr! "_", " "
+    ru_url.split("/").last.tr "_", " "
   end
 
 

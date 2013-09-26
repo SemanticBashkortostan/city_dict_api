@@ -55,15 +55,23 @@ class TomitaFactsExtractor
         hash.each do |type, values|
           next if type == :feed_id
           values.each do |named_entity|
-            p [ named_entity, find_city(city_name), hash[:feed_id]]
-            gets
-            ve = VocabularyEntry.find_or_create_by_name named_entity
-             
-            # ve = VocabularyEntry.new name: named_entity, city_id: find_city(city_name), source: :tomita
-            # ve.url = "http:://rbcitynews.ru/feeds/#{hash[:feed_id]}"
-            # ve.metadata["type"] = type
-            # ve.save
+            city_id = find_city(city_name)
+            if city_id 
+              token = VocabularyEntry.find_or_create_by_name_or_normalized_name named_entity              
+              
+              url = "http:://rbcitynews.ru/feeds/#{hash[:feed_id]}"
+
+              metadata = Metadata.find_or_create_by_city_id_and_source_and_url_and_type_name_and_vocabulary_entry_id(
+                city_id, :tomita, url, type, token.id )                
+
+              unless metadata.other["rbcitynews_id"]
+                metadata.other["rbcitynews_id"] = hash[:feed_id]
+                metadata.save!                
+              end
+            end
+
           end
+
         end
       end
     end
