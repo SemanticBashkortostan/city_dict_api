@@ -1,4 +1,4 @@
-# Yandex Hackaton project
+# Yandex Hackathon project
 
 Overview: http://city-dict.herokuapp.com/presentation.html
 
