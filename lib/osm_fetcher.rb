@@ -11,13 +11,14 @@ class OsmFetcher
 
 
   # +bounding_box+ is a Hash, look at up
-  def initialize(bounding_box, filename )
+  def initialize(bounding_box, filename, path=nil  )
+    path ||= "#{Rails.root}/project_files/osm_maps/"
     @bounding_box = bounding_box
-    @filename = "#{Rails.root}/project_files/osm_maps/#{filename}"
+    @filename = path + filename
   end
 
 
-  def get_part_of_map( main_map = "#{Rails.root}/project_files/bashkortostan.osm" )
+  def get_part_of_map( main_map = "#{Rails.root}/project_files/osm_maps/bashkortostan.osm" )
     raise "OsmFetcher - bashkortostan.osm not exist!" unless File.exist?(main_map)
     exec = "osmosis --read-xml file=\"#{main_map}\" --bounding-box top=#{@bounding_box[:top]} left=#{@bounding_box[:left]} \
             bottom=#{@bounding_box[:bottom]} right=#{@bounding_box[:right]} --write-xml file=\"#{@filename}\""

@@ -21,6 +21,9 @@ namespace :data_fetcher do
 		end
 
 		task :generate_xmls_run do 
+			#TODO: Написать скрипт который будет получать bashkortostan.osm отсюда http://gis-lab.info/projects/osm_dump/
+			# формировать .osm файлы для городов. Все это будет делать в shared папке и потом делать линк 
+			# в папку с проектом ln -nfs
 			OsmFetcher.make_maps_from_text_classes		
 		end
 	end	
