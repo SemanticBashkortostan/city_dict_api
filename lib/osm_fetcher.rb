@@ -18,7 +18,7 @@ class OsmFetcher
 
 
   def get_part_of_map( main_map = "#{Rails.root}/project_files/bashkortostan.osm" )
-    raise Exception unless File.exist?(main_map)
+    raise "OsmFetcher - bashkortostan.osm not exist!" unless File.exist?(main_map)
     exec = "osmosis --read-xml file=\"#{main_map}\" --bounding-box top=#{@bounding_box[:top]} left=#{@bounding_box[:left]} \
             bottom=#{@bounding_box[:bottom]} right=#{@bounding_box[:right]} --write-xml file=\"#{@filename}\""
     system exec

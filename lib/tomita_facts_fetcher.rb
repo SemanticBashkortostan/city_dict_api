@@ -1,4 +1,4 @@
-class TomitaFactsExtractor
+class TomitaFactsFetcher
 
   def initialize filename = "facts-1.xml"
     @file = "#{Rails.root}/project_files/tomita/#{filename}"
