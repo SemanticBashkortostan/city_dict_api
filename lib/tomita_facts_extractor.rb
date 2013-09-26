@@ -1,6 +1,6 @@
 class TomitaFactsExtractor
 
-  def initialize filename
+  def initialize filename = "facts-1.xml"
     @file = "#{Rails.root}/project_files/tomita/#{filename}"
   end
 
@@ -47,9 +47,8 @@ class TomitaFactsExtractor
   end
 
 
-  def self.lazy filename = "facts-1.xml"
-    tomita = TomitaFactsExtractor.new filename
-    tomita.get_facts.each do |city_name, set_of_hash|
+  def fill_db!    
+    get_facts.each do |city_name, set_of_hash|
       set_of_hash.each do |hash|
         next if hash.keys.length < 2
         hash.each do |type, values|
@@ -103,7 +102,7 @@ class TomitaFactsExtractor
   end
 
 
-  def self.find_city city_name
+  def find_city city_name
     City.find_by_name(city_name.mb_chars.capitalize.to_s).try :id
   end
 
