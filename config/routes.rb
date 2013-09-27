@@ -1,15 +1,19 @@
 CityDictApi::Application.routes.draw do
   root :to => "main#index"
 
-  resources :cities do
-    resources :words do
+  namespace :api do 
+    namespace :v1 do 
+      resources :cities do
+        resources :words do
+        end
+      end
+      resources :words, :only => [:show, :index] do 
+        get :all, :on => :collection
+      end
+
+      match '/types' => "main#types"      
     end
   end
-  resources :words, :only => [:show]
-
-  match '/types' => "main#types"
-  match "/word" => "main#word"
-  match "/all_data" => "main#all_data"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
