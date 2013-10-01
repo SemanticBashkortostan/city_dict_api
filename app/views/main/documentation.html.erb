@@ -347,11 +347,196 @@
       <div class='sub_section'>
       <div name="FactsForCity" data-unique="FactsForCity"></div>
       <h4 class='sub_sub_sub_head'>Факты для определенного города</h4>
+      <h5>Описание</h5>
+      <pre>words</pre>
+      <p>Возвращает список фактов с метаданными для определенного города.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/cities/{city_id}/words.[format]</pre>
+      <p>В запросе вместо {city_id} указывается идентификатора города.</p>
+      <h5>Входные данные</h5>
+      <table class="table table-bordered">
+        <tr>
+          <td>Параметр</td>
+          <td>Тип</td>
+          <td>Значение</td>
+        </tr>
+        <tr>
+          <b>Необязательные параметры</b>
+        </tr>
+        <tr>
+          <td>page</td>
+          <td>Число</td>
+          <td>Номер страницы результатов, которую необходимо показать в ответе.
+            Значение по умолчанию: 1. По умолчанию выводится 30 элементов на страницу.
+          </td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>Строка</td>
+          <td>Фильтрация фактов по названию типа (категории).</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>Строка</td>
+          <td>Фильтрация фактов по названию.</td>
+        </tr>
+      </table>
+      <h5>Выходные данные</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        {
+                          "per_page": <Количество фактов на страницу>,
+                          "pages_count": <Количество страниц>,
+                          "current_page": <Текущая страница>,
+                          "words": [
+                          {
+                            "id": <Идентификатор факта>,
+                            "name":<Название факта>,
+                            "normalized_name": <Нормализованное название факта>,
+                            "metadata": [
+                            {
+                                "city_id": <Идентификатор города>,
+                                "created_at": <Дата добавления метаданного в API>,
+                                "id":<Идентификатор метаданного>,
+                                "other": {
+                                     <Дополнительные метаданные, зависят от параметра source>
+                                 },
+                                 "source": <Источник метаданного>,
+                                 "type_name": <Название типа (категории)>,
+                                 "updated_at":<Дата обновления метаданного в API>,
+                                 "url":<Источник метаданного>,
+                                 "vocabulary_entry_id": <Идентификатор факта>
+                            },
+                            ...
+                            ]
+                          },
+                          ...
+                          ]
+                        }
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/cities/5/words.json?page=4</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                    {
+                      "per_page": 30,
+                      "pages_count": 17,
+                      "current_page": "4",
+                      "words": [
+                        {
+                          "id": 591,
+                          "name": "Отделение связи №452689",
+                          "normalized_name": "отделение связи №452689",
+                          "metadata": [
+                            {
+                              "city_id": 5,
+                              "created_at": "2013-09-26T18:48:47Z",
+                              "id": 595,
+                              "other": {
+                                "osm_id": "2008461899",
+                                "bounding_box": "{:top=>56.1428, :left=>54.1406, :bottom=>55.9649, :right=>54.4221}"
+                              },
+                              "source": "osm",
+                              "type_name": "post_office",
+                              "updated_at": "2013-09-26T18:48:47Z",
+                              "url": null,
+                              "vocabulary_entry_id": 591
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    </pre>
       </div>
 
       <div class='sub_section'>
       <div name="Fact" data-unique="Fact"></div>
       <h4 class='sub_sub_sub_head'>Определенный факт</h4>
+      <h5>Описание</h5>
+      <pre>words</pre>
+      <p>Возвращает список фактов с метаданными.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/words/{word_id}.[format]</pre>
+      <p>В запросе вместо {word_id} указывается идентификатор факта.</p>
+      
+      <h5>Выходные данные</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        {
+                          "word":
+                          {
+                            "id": <Идентификатор факта>,
+                            "name":<Название факта>,
+                            "normalized_name": <Нормализованное название факта>,
+                            "metadata": [
+                            {
+                                "city_id": <Идентификатор города>,
+                                "created_at": <Дата добавления метаданного в API>,
+                                "id":<Идентификатор метаданного>,
+                                "other": {
+                                     <Дополнительные метаданные, зависят от параметра source>
+                                 },
+                                 "source": <Источник метаданного>,
+                                 "type_name": <Название типа (категории)>,
+                                 "updated_at":<Дата обновления метаданного в API>,
+                                 "url":<Источник метаданного>,
+                                 "vocabulary_entry_id": <Идентификатор факта>
+                            },
+                            ...
+                            ]
+                          }
+                        }
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/words/1562.json</pre>
+      <p>Пример ответа:</p>
+        <pre>                  
+          {
+            "word": {
+              "id": 1562,
+              "name": "Нефтяник",
+              "normalized_name": "нефтяник",
+              "metadata": [
+                {
+                  "city_id": 3,
+                  "created_at": "2013-09-26T21:05:33Z",
+                  "id": 2083,
+                  "other": {
+                    "osm_id": "252331024",
+                    "bounding_box": "{:top=>54.8943, :left=>55.7638, :bottom=>54.5258, :right=>56.21}"
+                  },
+                  "source": "osm",
+                  "type_name": null,
+                  "updated_at": "2013-09-26T21:05:33Z",
+                  "url": null,
+                  "vocabulary_entry_id": 1562
+                },
+                {
+                  "city_id": 1,
+                  "created_at": "2013-09-26T21:03:51Z",
+                  "id": 1729,
+                  "other": {
+                    "osm_id": "89079204",
+                    "bounding_box": "{:top=>53.4731, :left=>55.9502, :bottom=>53.3999, :right=>56.1322}"
+                  },
+                  "source": "osm",
+                  "type_name": null,
+                  "updated_at": "2013-09-26T21:03:51Z",
+                  "url": null,
+                  "vocabulary_entry_id": 1562
+                }
+              ]
+            }
+          }
+        </pre>
       </div>
 
     </section>
