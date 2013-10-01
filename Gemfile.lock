@@ -54,6 +54,13 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.1)
+    haml (4.0.3)
+      tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
     highline (1.6.19)
     hike (1.2.3)
     i18n (0.6.5)
@@ -166,6 +173,7 @@ DEPENDENCIES
   capistrano
   coffee-rails (~> 3.2.1)
   dbpedia
+  haml-rails
   jquery-rails
   kaminari
   nokogiri

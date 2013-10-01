@@ -13,6 +13,7 @@ body {
 a { color: #067aa7; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 a img { border: 0; }
+a.about{ text-decoration: underline; font-size: 20px; }
 
 article, aside, details, footer, header, menu, nav, section { display: block; }
 input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
@@ -25,7 +26,7 @@ textarea { overflow: auto; }
 
 .shell  { width: 80%; margin: 0 auto; }
 
-#header { background: url(images/header.png) repeat-x 0 0; height:72px; }
+#header { background: url(images/header.png) repeat-x 0 0;  }
 #header .logo {font-size: 32px; line-height:32px;color: #fff; padding:19px 0px;display: inline-block;font-family: "OfficinaSansC", Arial, sans-serif;}
 #header .logo:hover {text-decoration: none}
 
@@ -44,4 +45,14 @@ html, body { height: 100%; }
 @font-face {
     font-family: OfficinaSansC;
     src: url(OfficinaSansC-Book.ttf);
+}
+
+pre {
+    white-space: pre-wrap;
+    background: #FDF6E3;
+}
+
+code {
+    background: #FDF6E3;
+}
 }

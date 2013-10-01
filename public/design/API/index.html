@@ -12,77 +12,148 @@
 
 </head>
 <body>
-	<div id="wrapper">
-        <!-- header -->
-        <header  id="header">
-            <div class="shell">
-                <a href="/" class="logo">API базы фактов по городам Башкортостана</a>
-            </div>
-        </header>
-        <!-- main -->
-        <div class="main">
-            <div class="shell">
-                <section id="introduction" class="single-page scrollblock">
-                    <h2>Введение</h2>
-                    <p>Базы фактов по городам Башкортостана позволяет получить различные факты</p>
-                </section>
-                <section id="addapi" class="single-page scrollblock">
-                    <h2>Формат ответа</h2>
-                    <p>Legend is a multi-purpose responsive one-page template built upon the Bootstrap framework.
-                        It does come with all of Bootstraps many add-ons and plugins making it does come with all of Bootstraps many add-ons and plugins making it
-                        interactive, easy to customize, upgradable and flexible enough to extend it to any level.</p>
-                </section>
-                <section id="services" class="single-page scrollblock">
-                    <h2>API</h2>
-                    <h3>/cities.xml</h3>
-                    <p>Legend is a multi-purpose responsive one-page template built upon the Bootstrap framework.
-                        It does come with all of Bootstraps many add-ons and plugins making it does come with all of Bootstraps many add-ons and plugins making it
-                        interactive, easy to customize, upgradable and flexible enough to extend it to any level.</p>
-                        <pre>
-[
-    {
-        "created_at":"2013-09-14T23:36:05Z",
-        "eng_name":"Ishimbay",
-        "id":1,
-        "name":"Ишимбай",
-        "updated_at":"2013-09-14T23:36:05Z"
-    }
-]
-                        </pre>
-<pre>
-<cities type="array">
-    <city>
-        <created-at type="datetime">2013-09-14T23:36:05Z</created-at>
-        <eng-name>Ishimbay</eng-name>
-        <id type="integer">1</id>
-        <name>Ишимбай</name>
-        <updated-at type="datetime">2013-09-14T23:36:05Z</updated-at>
-    </city>
-</cities>
-</pre>
-                </section>
-                <section id="idea" class="single-page scrollblock">
-                    <h2>Идеи для разных типов сайтов <a href="#menu-main" class="top">к списку</a></h2>
-                    <p>Legend is a multi-purpose responsive one-page template built upon the Bootstrap framework.
-                        It does come with all of Bootstraps many add-ons and plugins making it does come</p>
-                </section>
-                <section id="primer" class="single-page scrollblock">
-                    <h2>Примеры <a href="#menu-main" class="top">к списку</a></h2>
-                    <p>Legend is a multi-purpose responsive one-page template built upon the Bootstrap framework.
-                        It does come with all of Bootstraps many add-ons and plugins making it does come</p>
-                </section>
-                <section id="faq" class="single-page scrollblock">
-                    <h2>Часто задаваемые вопросы <a href="#menu-main" class="top">к списку</a></h2>
-                    <p>Legend is a multi-purpose responsive one-page template built upon the Bootstrap framework.
-                        It does come with all of Bootstraps many add-ons and plugins making it does come</p>
-                </section>
-            </div>
+	
+<div id='wrapper'>
+  <!-- header -->
+  <header id='header'>
+    <div class='shell'>
+      <a href="/" class="logo">API базы фактов по городам Башкортостана</a>
+    </div>
+  </header>
+  <!-- main -->
+  <div class='main'>
+    <div class='shell'>
+      <br>
+      <h3><a href="/presentation.html" class="about">О проекте</a></h3>
+      <section class='single-page scrollblock' id='introduction'>
+        <div class='description'>
+          <h2 class='main_head'>Краткое описание</h2>
+          <p>
+            Проект <b>"База фактов по городам Башкортостана"</b> позволяет получать различные <b>факты</b>
+            относящиеся к городу. Под <b>фактом</b> понимается имя собственное, например, достопримечательность или
+            известная личность. Каждый факт имеет источник упоминания и различные метаданные. Факты извлекаются из
+            таких источников как: <b>Dbpedia, Open Steet Map и RSS-ленты </b>.
+          </p>
+          <p>
+            Данное API можно применять для различных задач, например, связанных с обрабокой естественного языка.
+            Например, можно извлекать из текста факты и с помощью метаданных (Open Street Map) указывать их на карте или предоставлять более подробную информацию ссылаясь на первоисточник.
+          </p>
+          <p>
+            Сейчас API внедряется в
+            <a href="http://rbcitynews.ru">&quot;Новостной агрегатор по городам Башкортостана&quot;.</a>
+            В тестовом окружении было достигнуто улучшение качества классификации на 9.4%.
+          </p>
         </div>
-	<div  id="footer">
-        <div class="shell">
-            <p class="copy">&copy; Яндекс Хакатон 2013</p>
-        </div>
-	</div>
+      </section>
+      <!-- У документации следующая структура: -->
+      <!-- - Документация -->
+      <!-- -- Первоначальные сведения -->
+      <!-- ---  Ресурсы -->
+      <!-- ---  Вызов ресурсов -->
+      <!-- -- Ресурсы API -->
+      <!-- ---  Города -->
+      <!-- ----   Все города -->
+      <!-- -----    Описание -->
+      <!-- -----    Входные данные* -->
+      <!-- -----    Выходные данные -->
+      <!-- -----    Пример для формата JSON -->
+      <!-- ----  Определенный город -->
+      <!-- -----    Описание -->
+      <!-- -----    Входные данные* -->
+      <!-- -----    Выходные данные -->
+      <!-- -----    Пример для формата JSON -->
+      <!-- ... аналогично для других ресурсов -->
+      <!-- ... помеченные * - необязательный -->
+      <div class='documentation'>
+        <section class='single-page scrollblock' id='addapi'>
+          <h2 class='main_head'>Документация</h2>
+          <div class='main_section'>
+            <section class='single-page scrollblock' id='addapi'>
+              <h2 class='sub_head'>Первоначальные сведения</h2>
+              API проекта <b>"База фактов по городам Башкортостана"</b>, далее просто API, построено по принципам
+              REST.
+              <div class='sub_section'>
+                <h3 class='sub_sub_head'>Ресурсы</h3>
+                <p>
+                  <b>Ресурс -</b>
+                  это интерфейс взаимодействия с API для получения данных определенного типа.
+                  У каждого ресурса есть свой уникальный URL. Все действия выполняются методом GET протокола HTTP на URL ресурсов.
+                </p>
+                <p>
+                  Например, чтобы получить факты относящие к городу Ишимбаю, необходимо отправить GET-запрос на URL
+                  ресурса, отвечающего за факты, указав в запросе идентефикатор города.
+                </p>
+              </div>
+              <div class='sub_section'>
+                <h3 class='sub_sub_head'>Вызов ресурсов</h3>
+                <p>Запросы к API передаются по протоколу HTTP.</p>
+                <p>Формат запроса:</p>
+                <pre>GET http://citydict.ru/api/v<версия_API>/<ресурс>.<формат_ответа>?<параметры></pre>
+                <p>где:</p>
+                <ul>
+                  <li><версия_API> - версия API, на данный момент - <b>1</b>.</li>
+                  <li><ресурс> - URL ресурса, над которым выполняется действие. Список ресурсов и их описание приведены в разделе Ресурсы API.</li>
+                  <li><формат ответа> - это необязательная часть запроса, которая влияет на способ представления ответа.Возможные форматы ответа: XML и JSON. По умолчанию данные передаются в формате JSON.</li>
+                  <li><параметры> - необязательные параметры запроса, которые не входят в состав URL ресурса. Например, для некоторых ресурсов можно передавать параметр page - номер страниц. Остальные параметры зависят от конкретного ресурса и приведены в описании ресурсов.</li>
+                </ul>
+                <p class='note'>API возвращает ответы в кодировке UTF-8.</p>
+              </div>
+            </section>
+          </div>
+          <div class='main_section'>
+            <section class='single-page scrollblock' id='addapi'>
+              <h2 class='sub_head'>Ресурсы API</h2>
+              <h3 class='sub_sub_head'>Города</h3>
+              <div class='sub_section'>
+                <h4 class='sub_sub_sub_head'>Все города</h4>
+                <h5>Описание</h5>
+                <pre>cities</pre>
+                <p>Возвращает список всех городов с которыми работает API.</p>
+                <p>URL ресурса:</p>
+                <pre>http://citydict.ru/api/v1/cities.[format]</pre>
+                <h5>Выходные данные:</h5>
+                <p>Структура выходных данных для формата JSON:</p>
+                <pre>[&#x000A;  {              &#x000A;    "eng_name": <Название города на английском>,&#x000A;    "id": <Идентификатор города>,&#x000A;    "name": <Название города>             &#x000A;  },&#x000A;  ...&#x000A;]</pre>
+                <h5>Пример для формата JSON</h5>
+                <p>Пример запроса:</p>
+                <pre>GET http://citydict.ru/api/v1/cities.json</pre>
+                <p>Пример ответа:</p>
+                <pre>{&#x000A;  "cities": [&#x000A;    {&#x000A;      "id": 1,&#x000A;      "name": "Ишимбай",&#x000A;      "eng_name": "Ishimbay"&#x000A;    },&#x000A;    {&#x000A;      "id": 2,&#x000A;      "name": "Стерлитамак",&#x000A;      "eng_name": "Sterlitamak"&#x000A;    }&#x000A;  ]&#x000A;}</pre>
+              </div>
+              <div class='sub_section'>
+                <h4 class='sub_sub_sub_head'>Определенный город</h4>
+                <h5>Описание</h5>
+                <pre>cities/{city_id}</pre>
+                <p>Возвращает информацию о городе. В запросе вместо {city_id} указывается идентификатор города.</p>
+                <p>URL ресурса:</p>
+                <pre>http://citydict.ru/api/v1/cities/{city_id}.[format]</pre>
+                <h5>Выходные данные:</h5>
+                <p>Структура выходных данных для формата JSON:</p>
+                <pre>{&#x000A;  "city": {&#x000A;    "eng_name": <Название города на английском>,&#x000A;    "id": <Идентификатор города>,&#x000A;    "name": <Название города>      &#x000A;  }&#x000A;}</pre>
+                <h5>Пример для формата JSON</h5>
+                <p>Пример запроса:</p>
+                <pre>GET http://citydict.ru/api/v1/cities/1.json</pre>
+                <p>Пример ответа:</p>
+                <pre>{&#x000A;  "city": {&#x000A;    "id": 1,&#x000A;    "name": "Ишимбай",&#x000A;    "eng_name": "Ishimbay"&#x000A;  }&#x000A;}&#x000A;</pre>
+              </div>
+              <h3 class='sub_sub_head'>Типы (категории)</h3>
+              <h4 class='sub_sub_sub_head'>Все типы</h4>
+              <h3 class='sub_sub_head'>Факты</h3>
+              <h4 class='sub_sub_sub_head'>Все факты</h4>
+              <h4 class='sub_sub_sub_head'>Факты для определенного города</h4>
+              <h4 class='sub_sub_sub_head'>Определенный факт</h4>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='shell'>
+      <p class='copy'><a href="http://events.yandex.ru/events/meetings/hack/">Яндекс Хакатон 2013</a></p>
+    </div>
+  </div>
+</div>
     <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
