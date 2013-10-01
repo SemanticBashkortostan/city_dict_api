@@ -3,10 +3,8 @@
 body, html { height: 100%; }
 
 body {
-	font-size: 16px;
 	line-height: 22px;
 	font-family: arial, sans-serif;
-	color: #828282;
 	background: #FFFFFF repeat 0 0;
 }
 
@@ -26,9 +24,6 @@ textarea { overflow: auto; }
 
 .shell  { width: 80%; margin: 0 auto; }
 
-#header { background: url(<%= asset_path "header.png" %>) repeat-x 0 0;  }
-#header .logo {font-size: 32px; line-height:32px;color: #fff; padding:19px 0px;display: inline-block;font-family: "OfficinaSansC", Arial, sans-serif;}
-#header .logo:hover {text-decoration: none}
 
 .main { padding:0px; position: relative; height: 100%; padding-bottom: 20px }
 .main h2 { font-size: 28px; color: #2d2d2d; padding-top: 20px; line-height: 28px; font-family: "OfficinaSansC", Arial, sans-serif; font-weight: 500; padding-bottom: 12px; }
@@ -47,12 +42,7 @@ html, body { height: 100%; }
     src: url(OfficinaSansC-Book.ttf);
 }
 
+#header { background: url(<%= asset_path "header.png" %>) repeat-x 0 0;  }
+#header .logo {font-size: 32px; line-height:32px;color: #fff; padding:19px 0px;display: inline-block;font-family: "OfficinaSansC", Arial, sans-serif;}
+#header .logo:hover {text-decoration: none}
 
-pre {
-    white-space: pre-wrap;
-    background: #FDF6E3;
-}
-
-code {
-    background: #FDF6E3;
-}

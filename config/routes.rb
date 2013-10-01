@@ -1,5 +1,6 @@
 CityDictApi::Application.routes.draw do
   root :to => "main#index"
+  match '/documentation' => "main#documentation"
 
   namespace :api do 
     namespace :v1 do 
@@ -11,7 +12,7 @@ CityDictApi::Application.routes.draw do
         get :all, :on => :collection
       end
 
-      match '/types' => "main#types"      
+      match '/types' => "main#types"
     end
   end
   # The priority is based upon order of creation:

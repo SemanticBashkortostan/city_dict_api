@@ -10,5 +10,8 @@
  *
  *= require_self
  *= require style
+ *= require jquery.tocify
  *= require_tree .
  */
+@import 'bootstrap';
+@import 'bootstrap-responsive';

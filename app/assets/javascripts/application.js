@@ -11,6 +11,13 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require site
 //= require jquery_ujs
+//= require bootstrap
+//= require jquery.ui.widget
+//= require jquery.tocify
 //= require_tree .
+
+$(function() {
+    //Calls the tocify method on your HTML div.
+    $("#toc").tocify();
+});

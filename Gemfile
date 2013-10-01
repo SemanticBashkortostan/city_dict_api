@@ -12,6 +12,7 @@ gem 'activerecord-postgres-hstore'
 gem 'settingslogic'
 
 gem 'haml-rails'
+gem 'bootstrap-sass'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,6 +27,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem "jquery-ui-rails"
 
 gem 'nokogiri'
 

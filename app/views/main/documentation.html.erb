@@ -1,0 +1,360 @@
+<div class='documentation' style="padding-left: 90px;">
+    <section class='single-page scrollblock' id='addapi'>
+    <h2 class='main_head'>Документация</h2>
+    <!-- У документации следующая структура: -->
+    <!-- - Документация -->
+    <!-- -- Первоначальные сведения -->
+    <!-- ---  Ресурсы -->
+    <!-- ---  Вызов ресурсов -->
+    <!-- -- Ресурсы API -->
+    <!-- ---  Города -->
+    <!-- ----   Все города -->
+    <!-- -----    Описание -->
+    <!-- -----    Входные данные* -->
+    <!-- -----    Выходные данные -->
+    <!-- -----    Пример для формата JSON -->
+    <!-- ----  Определенный город -->
+    <!-- -----    Описание -->
+    <!-- -----    Входные данные* -->
+    <!-- -----    Выходные данные -->
+    <!-- -----    Пример для формата JSON -->
+    <!-- ... аналогично для других ресурсов -->
+    <!-- ... помеченные * - необязательный -->
+
+    <!--Оглавление документации-->
+    <div id='toc' data-spy="affix" style="left: 10px; top: 200px;">
+      <ul class='nav nav-pills nav-stacked'>
+        <li id="main_info" data-unique="MainInfo">
+          <a>Первоначальные сведения</a>
+        </li>
+        <ul>
+            <li id="res1" data-unique="Resource"><a>Ресурс</a></li>
+            <li id="calres1" data-unique="CallResources"><a>Вызов ресурсов</a></li>
+        </ul>
+        <li id="res_desc" data-unique="ResourcePart">
+          <a>Ресурсы API</a>
+        </li>
+        <ul>
+          <li data-unique="Cities"><a>Города</a></li>
+          <ul>
+            <li data-unique="AllCities"><a>Все города</a></li>
+            <li data-unique="City"><a>Определенный город</a></li>
+          </ul>
+          <li data-unique="Types"><a>Типы (категории)</a></li>
+          <ul>
+              <li data-unique="AllTypes"><a>Все типы</a></li>
+          </ul>
+          <li data-unique="Facts"><a>Факты</a></li>
+          <ul>
+            <li data-unique="AllFacts"><a>Все факты</a></li>
+            <li data-unique="FactsForCity"><a>Факты для <br />
+            определенного города</a></li>
+            <li data-unique="Fact"><a>Определенный факт</a></li>
+          </ul>
+        </ul>
+        <li></li>
+      </ul>
+    </div>
+    <div class='main_section'>
+      <section class='single-page scrollblock' id='addapi'>
+        <div name="MainInfo" data-unique="MainInfo"></div>
+        <h2 class='sub_head'>Первоначальные сведения</h2>
+        API проекта <b>"База фактов по городам Башкортостана"</b>, далее просто API, построено по принципам
+        REST.
+        <div name="Resource" data-unique="Resource"></div>
+        <div class='sub_section'>
+          <h3 class='sub_sub_head'>Ресурсы</h3>
+
+          <p>
+            <b>Ресурс -</b>
+            это интерфейс взаимодействия с API для получения данных определенного типа.
+            У каждого ресурса есть свой уникальный URL. Все действия выполняются методом GET протокола HTTP на URL ресурсов.
+          </p>
+
+          <p>
+            Например, чтобы получить факты относящие к городу Ишимбаю, необходимо отправить GET-запрос на URL
+            ресурса, отвечающего за факты, указав в запросе идентификатор города.
+          </p>
+        </div>
+        <div class='sub_section'>
+          <div name="CallResources" data-unique="CallResources"></div>
+          <h3 class='sub_sub_head'>Вызов ресурсов</h3>
+
+          <p>Запросы к API передаются по протоколу HTTP.</p>
+
+          <p>Формат запроса:</p>
+          <pre>GET http://citydict.ru/api/v<версия_API>/<ресурс>.<формат_ответа>?<параметры></pre>
+          <p>где:</p>
+          <ul>
+            <li>
+              <версия_API> - версия API, на данный момент - <b>1</b>.
+            </li>
+            <li>
+              <ресурс> - URL ресурса, над которым выполняется действие. Список ресурсов и их описание приведены в разделе
+                Ресурсы API.
+            </li>
+            <li>
+              <формат ответа> - это необязательная часть запроса, которая влияет на способ представления ответа.Возможные
+                форматы ответа: XML и JSON. По умолчанию данные передаются в формате JSON.
+            </li>
+            <li>
+              <параметры> - необязательные параметры запроса, которые не входят в состав URL ресурса. Например, для
+                некоторых ресурсов можно передавать параметр page - номер страниц. Остальные параметры зависят от
+                конкретного ресурса и приведены в описании ресурсов.
+            </li>
+          </ul>
+          <p class='note'>API возвращает ответы в кодировке UTF-8.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class='main_section'>
+    <section class='single-page scrollblock' id='addapi'>
+    <div name="ResourcePart" data-unique="ResourcePart"></div>
+    <h2 class='sub_head'>Ресурсы API</h2>
+
+    <div name="Cities" data-unique="Cities"></div>
+    <h3 class='sub_sub_head'>Города</h3>
+
+    <div class='sub_section'>
+      <div name="AllCities" data-unique="AllCities"></div>
+      <h4 class='sub_sub_sub_head'>Все города</h4>
+      <h5>Описание</h5>
+      <pre>cities</pre>
+      <p>Возвращает список всех городов с которыми работает API.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/cities.[format]</pre>
+      <h5>Выходные данные:</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        [
+                          {
+                            "eng_name": <Название города на английском>,
+                            "id": <Идентификатор города>,
+                            "name": <Название города>
+                          },
+                          ...
+                         ]
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/cities.json</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                      {
+                        "cities": [
+                          {
+                            "id": 1,
+                            "name": "Ишимбай",
+                            "eng_name": "Ishimbay"
+                          },
+                          {
+                            "id": 2,
+                            "name": "Стерлитамак",
+                            "eng_name": "Sterlitamak"
+                          }
+                        ]
+                      }
+                  </pre>
+    </div>
+    <div class='sub_section'>
+      <div name="City" data-unique="City"></div>
+      <h4 class='sub_sub_sub_head'>Определенный город</h4>
+      <h5>Описание</h5>
+      <pre>cities/{city_id}</pre>
+      <p>Возвращает информацию о городе. В запросе вместо {city_id} указывается идентификатор города.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/cities/{city_id}.[format]</pre>
+      <h5>Выходные данные:</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                    {
+                      "city": {
+                        "eng_name": <Название города на английском>,
+                        "id": <Идентификатор города>,
+                        "name": <Название города>
+                      }
+                    }
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/cities/1.json</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                          {
+                            "city": {
+                              "id": 1,
+                              "name": "Ишимбай",
+                              "eng_name": "Ishimbay"
+                            }
+                          }
+                    </pre>
+    </div>
+
+    <div name="Types" data-unique="Types"></div>
+    <h3 class='sub_sub_head'>Типы (категории)</h3>
+
+    <div class='sub_section'>
+      <div name="AllTypes" data-unique="AllTypes"></div>
+      <h4 class='sub_sub_sub_head'>Все типы</h4>
+      <h5>Описание</h5>
+      <pre>types</pre>
+      <p>Возвращает список из названий типов (категорий).</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/types.[format]</pre>
+      <h5>Выходные данные:</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        [
+                          <Название типа (категории)>,
+                          ...
+                        ]
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/types.json</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                      [
+                        "college",
+                        "kindergarten",
+                        "school"
+                      ]
+                    </pre>
+    </div>
+
+    <div name="Facts" data-unique="Facts"></div>
+    <h3 class='sub_sub_head'>Факты</h3>
+
+    <div class='sub_section'>
+      <div name="AllFacts" data-unique="AllFacts"></div>
+      <h4 class='sub_sub_sub_head'>Все факты</h4>
+      <h5>Описание</h5>
+      <pre>words</pre>
+      <p>Возвращает список фактов с метаданными.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/words.[format]</pre>
+      <h5>Входные данные</h5>
+      <table class="table table-bordered">
+        <tr>
+          <td>Параметр</td>
+          <td>Тип</td>
+          <td>Значение</td>
+        </tr>
+        <tr>
+          <b>Необязательные параметры</b>
+        </tr>
+        <tr>
+          <td>page</td>
+          <td>Число</td>
+          <td>Номер страницы результатов, которую необходимо показать в ответе.
+            Значение по умолчанию: 1. По умолчанию выводится 30 элементов на страницу.
+          </td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>Строка</td>
+          <td>Фильтрация фактов по названию типа (категории). Ресурс категорий описан выше.</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>Строка</td>
+          <td>Фильтрация фактов по названию.</td>
+        </tr>
+      </table>
+      <h5>Выходные данные</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        {
+                          "per_page": <Количество фактов на страницу>,
+                          "pages_count": <Количество страниц>,
+                          "current_page": <Текущая страница>,
+                          "words": [
+                          {
+                            "id": <Идентификатор факта>,
+                            "name":<Название факта>,
+                            "normalized_name": <Нормализованное название факта>,
+                            "metadata": [
+                            {
+                                "city_id": <Идентификатор города>,
+                                "created_at": <Дата добавления метаданного в API>,
+                                "id":<Идентификатор метаданного>,
+                                "other": {
+                                     <Дополнительные метаданные, зависят от параметра source>
+                                 },
+                                 "source": <Источник метаданного>,
+                                 "type_name": <Название типа (категории)>,
+                                 "updated_at":<Дата обновления метаданного в API>,
+                                 "url":<Источник метаданного>,
+                                 "vocabulary_entry_id": <Идентификатор факта>
+                            },
+                            ...
+                            ]
+                          },
+                          ...
+                          ]
+                        }
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/words.json?page=4</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                    {
+                      "per_page": 30,
+                      "pages_count": 17,
+                      "current_page": "4",
+                      "words": [
+                        {
+                          "id": 591,
+                          "name": "Отделение связи №452689",
+                          "normalized_name": "отделение связи №452689",
+                          "metadata": [
+                            {
+                              "city_id": 5,
+                              "created_at": "2013-09-26T18:48:47Z",
+                              "id": 595,
+                              "other": {
+                                "osm_id": "2008461899",
+                                "bounding_box": "{:top=>56.1428, :left=>54.1406, :bottom=>55.9649, :right=>54.4221}"
+                              },
+                              "source": "osm",
+                              "type_name": "post_office",
+                              "updated_at": "2013-09-26T18:48:47Z",
+                              "url": null,
+                              "vocabulary_entry_id": 591
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    </pre>
+
+      </div>
+
+      <div class='sub_section'>
+      <div name="FactsForCity" data-unique="FactsForCity"></div>
+      <h4 class='sub_sub_sub_head'>Факты для определенного города</h4>
+      </div>
+
+      <div class='sub_section'>
+      <div name="Fact" data-unique="Fact"></div>
+      <h4 class='sub_sub_sub_head'>Определенный факт</h4>
+      </div>
+
+    </section>
+    </div>
+    </section>
+</div>
