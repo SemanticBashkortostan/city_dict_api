@@ -1,8 +1,6 @@
 # Yandex Hackathon project
 
-Overview: http://city-dict.herokuapp.com/presentation.html
-
-API site: http://city-dict.herokuapp.com
+API site: http://citydict.ru
 
 See milestones: https://github.com/sld/city_dict_api/issues/milestones?with_issues=no
 
