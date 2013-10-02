@@ -16,10 +16,8 @@ development:
   adapter: postgresql
   encoding: unicode
   database: city_dict_api_development
-  host: localhost
+  template: template0
   pool: 5
-  username: your_postgres_username
-  password: your_postgres_password
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,7 +41,5 @@ test:
   adapter: postgresql
   encoding: unicode
   database: city_dict_api_test
-  host: localhost
+  template: template0
   pool: 5
-  username: your_postgres_username
-  password: your_postgres_password
