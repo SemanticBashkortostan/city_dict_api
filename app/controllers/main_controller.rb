@@ -8,5 +8,6 @@ class MainController < ApplicationController
 
 
   def presentation  	
+  	render :layout => false
   end
 end

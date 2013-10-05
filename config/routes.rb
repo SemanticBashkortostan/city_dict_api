@@ -1,7 +1,7 @@
 CityDictApi::Application.routes.draw do
   root :to => "main#index"
   match '/documentation' => "main#documentation"
-  match '/presentation_new' => "main#presentation"
+  match '/presentation' => "main#presentation"
 
   namespace :api do 
     namespace :v1 do 
