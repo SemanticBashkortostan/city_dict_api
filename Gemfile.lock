@@ -74,8 +74,6 @@ GEM
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
     hike (1.2.3)
-    honeybadger (1.16.3)
-      json
     i18n (0.6.11)
     journey (1.0.4)
     jquery-rails (3.0.4)
@@ -122,11 +120,6 @@ GEM
       activesupport (= 3.2.16)
       bundler (~> 1.0)
       railties (= 3.2.16)
-    rails_12factor (0.0.2)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.2)
-    rails_stdout_logging (0.0.3)
     railties (3.2.16)
       actionpack (= 3.2.16)
       activesupport (= 3.2.16)
@@ -171,11 +164,14 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    turbo-sprockets-rails3 (0.3.10)
+      railties (> 3.2.8, < 4.0.0)
+      sprockets (>= 2.0.0)
     tzinfo (0.3.41)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.6.3)
+    unicorn (4.7.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -194,7 +190,6 @@ DEPENDENCIES
   dbpedia
   fuzzy_match
   haml-rails
-  honeybadger
   jquery-rails (~> 3.0.4)
   jquery-ui-rails (~> 4.0.4)
   kaminari
@@ -202,12 +197,12 @@ DEPENDENCIES
   pg
   rabl-rails
   rails (= 3.2.16)
-  rails_12factor (~> 0.0.2)
   rdf
   sass-rails (~> 3.2.3)
   settingslogic
   sparql-client
   therubyracer
   thin
+  turbo-sprockets-rails3
   uglifier (>= 1.0.3)
-  unicorn (~> 4.6.2)
+  unicorn (~> 4.7.0)

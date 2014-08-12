@@ -19,6 +19,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
+  gem 'turbo-sprockets-rails3'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -32,12 +33,7 @@ gem "dbpedia"
 gem "sparql-client"
 gem "rdf"
 
-gem 'honeybadger'
-
-group :production do
-	gem 'rails_12factor', '~> 0.0.2'
-	gem 'unicorn', '~> 4.6.2'
-end
+gem 'unicorn', '~> 4.7.0'
 
 gem 'fuzzy_match'
 gem 'amatch'
