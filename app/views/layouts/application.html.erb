@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CityDictApi</title>
+  <title><%= content_for?(:title) ? ("CityDictApi | " + yield(:title)) : "CityDictApi" %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-45189789-1']);
@@ -30,8 +30,8 @@
   <div class='main'>
       <div class='shell'>
       	<span>
-        	<a href="/presentation" class="btn btn-primary btn-lg">Презентация проекта</a>        
-        	<a href="/" class="btn btn-default btn-lg">Кратко о проекте</a>        
+        	<a href="/presentation" class="btn btn-primary btn-lg">Презентация проекта</a>
+        	<a href="/" class="btn btn-default btn-lg">Кратко о проекте</a>
         	<a href="/documentation" class="btn btn-default btn-lg">Документация</a>
         </span>
 

@@ -1,3 +1,4 @@
+<%= page_title "Документация" %>
 <div class='documentation' style="padding-left: 90px;">
     <section class='single-page scrollblock' id='addapi'>
     <h2 class='main_head'>Документация</h2>
@@ -50,6 +51,7 @@
             <li data-unique="FactsForCity"><a>Факты для <br />
             определенного города</a></li>
             <li data-unique="Fact"><a>Определенный факт</a></li>
+            <li data-unique="FuzzyStringMatch"><a>Нечеткий поиск <br />по фактам</a></li>
           </ul>
         </ul>
         <li></li>
@@ -463,7 +465,7 @@
       <p>URL ресурса:</p>
       <pre>http://citydict.ru/api/v1/words/{word_id}.[format]</pre>
       <p>В запросе вместо {word_id} указывается идентификатор факта.</p>
-      
+
       <h5>Выходные данные</h5>
 
       <p>Структура выходных данных для формата JSON:</p>
@@ -498,7 +500,7 @@
       <p>Пример запроса:</p>
       <pre>GET http://citydict.ru/api/v1/words/1562.json</pre>
       <p>Пример ответа:</p>
-        <pre>                  
+        <pre>
           {
             "word": {
               "id": 1562,
@@ -541,5 +543,101 @@
 
     </section>
     </div>
+
+
+    <div class='sub_section'>
+    <div name="FuzzyStringMatch" data-unique="FuzzyStringMatch"></div>
+    <h4 class='sub_sub_sub_head'>Нечеткий поиск по фактам</h4>
+    <h5>Описание</h5>
+    <pre>fuzzy_match</pre>
+    <p>Возвращает наиболее похожий по отношению к сравниваемым факт.</p>
+    <p>Сравнение производится с помощью расстояния Левенштейна и Dice's coefficient.
+    Подробнее описано <a href='https://github.com/seamusabshere/fuzzy_match'>здесь</a>.</p>
+
+    <p>URL ресурса:</p>
+    <pre>http://citydict.ru/api/v1/cities/{city_id}/words/fuzzy_match.[format]</pre>
+    <p>В запросе вместо {city_id} указывается идентификатор города.</p>
+
+    <h5>Входные данные</h5>
+      <table class="table table-bordered">
+        <tr>
+          <td>Параметр</td>
+          <td>Тип</td>
+          <td>Значение</td>
+        </tr>
+        <tr>
+          <b>Обязательные параметры</b>
+        </tr>
+        <tr>
+          <td>words[]</td>
+          <td>Набор строк, которые должны быть разделены след. образом:
+            words[]=Word1&words[]=Word2...</td>
+          <td>Набор слов по отношению к которым требуется найти наиболее похожий
+            факт.</td>
+        </tr>
+        <tr>
+          <td>dice</td>
+          <td>Число с плавающей точкой от 0 до 1</td>
+          <td>Минимальное значение Dice's coefficient, которое должно
+          быть между сравниваемыми объектами.
+          </td>
+        </tr>
+        <tr>
+          <td>levenshtein</td>
+          <td>Число с плавающей точкой от 0 до 1</td>
+          <td>Минимальное значение расстояния Левенштейна, которое должно
+          быть между сравниваемыми объектами.</td>
+        </tr>
+        <tr>
+          <td>city_id</td>
+          <td>Натуральное число</td>
+          <td>Идентификатор города.</td>
+        </tr>
+      </table>
+
+    <h5>Выходные данные</h5>
+
+    <p>Структура выходных данных для формата JSON:</p>
+                  <pre>
+                      {
+                        "levenshtein": <значение расстояния Левенштейна между найденным фактом и словом>,
+                        "dice": <значение Dice's coefficient между найденным фактом и словом>,
+                        "original_word": <Название слова, к которому найден похожий факт>,
+                        "found":
+                        {
+                          "id": <Идентификатор факта>,
+                          "name":<Название факта>,
+                          "normalized_name": <Нормализованное название факта>,
+                          "metadata": [
+                          {
+                              "city_id": <Идентификатор города>,
+                              "created_at": <Дата добавления метаданного в API>,
+                              "id":<Идентификатор метаданного>,
+                              "other": {
+                                   <Дополнительные метаданные, зависят от параметра source>
+                               },
+                               "source": <Источник метаданного>,
+                               "type_name": <Название типа (категории)>,
+                               "updated_at":<Дата обновления метаданного в API>,
+                               "url":<Источник метаданного>,
+                               "vocabulary_entry_id": <Идентификатор факта>
+                          },
+                          ...
+                          ]
+                        }
+                      }
+                  </pre>
+    <!-- <h5>Пример для формата JSON</h5>
+
+    <p>Пример запроса:</p>
+    <pre>GET http://citydict.ru/api/v1/words/1562.json</pre>
+    <p>Пример ответа:</p>
+      <pre>
+
+      </pre> -->
+    </div>
+
+  </section>
+  </div>
     </section>
 </div>
