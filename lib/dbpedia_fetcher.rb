@@ -72,7 +72,9 @@ class DbpediaFetcher
     sparql = SPARQL::Client.new("http://dbpedia.org/sparql")
 
     City.all.each do |city|
-      result = sparql.query( sparql_query(city.eng_name) )
+      puts sparql_query(city.eng_name)
+      result = sparql.query( sparql_query(city.eng_name),
+        :content_type => SPARQL::Client::RESULT_JSON )
       result.each do |rdf|
         url = rdf.resource.to_s
         url["resource"] = "data"
@@ -96,15 +98,15 @@ class DbpediaFetcher
         end
 
         if ru_url
-          rus_name = get_rus_name(ru_url)         
-                           
+          rus_name = get_rus_name(ru_url)
+
           token = VocabularyEntry.find_or_create_by_name_or_normalized_name rus_name
 
           metadata = Metadata.find_or_create_by_source_and_city_id_and_type_name_and_url_and_vocabulary_entry_id(
             :dbpedia, city.id, type, url, token.id )
-          if ru_url && metadata.other["ru_url"].nil? 
-            metadata.other["ru_url"] = ru_url  
-            metadata.save!                 
+          if ru_url && metadata.other["ru_url"].nil?
+            metadata.other["ru_url"] = ru_url
+            metadata.save!
           end
         end
 
