@@ -35,8 +35,8 @@ gem "rdf"
 gem 'honeybadger'
 
 group :production do
-	gem 'rails_12factor'
-	gem 'unicorn'
+	gem 'rails_12factor', '~> 0.0.2'
+	gem 'unicorn', '~> 4.6.2'
 end
 
 gem 'fuzzy_match'
@@ -50,3 +50,4 @@ gem 'rabl-rails'
 
 gem 'capistrano', '~> 3.1.0'
 gem 'capistrano-rails', '~> 1.1'
+gem 'capistrano-rbenv', '~> 2.0'
