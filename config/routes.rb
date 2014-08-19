@@ -14,7 +14,8 @@ CityDictApi::Application.routes.draw do
         get :all, on: :collection
       end
 
-      match '/types' => "main#types"
+      get '/types' => "main#types"
+      get '/sources' => "main#sources"
     end
   end
 end

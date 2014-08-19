@@ -37,22 +37,26 @@
         </li>
         <ul>
           <li data-unique="Cities"><a>Города</a></li>
-          <ul>
-            <li data-unique="AllCities"><a>Все города</a></li>
-            <li data-unique="City"><a>Определенный город</a></li>
-          </ul>
+            <ul>
+              <li data-unique="AllCities"><a>Все города</a></li>
+              <li data-unique="City"><a>Определенный город</a></li>
+            </ul>
           <li data-unique="Types"><a>Типы (категории)</a></li>
-          <ul>
-              <li data-unique="AllTypes"><a>Все типы</a></li>
-          </ul>
+            <ul>
+                <li data-unique="AllTypes"><a>Все типы</a></li>
+            </ul>
+          <li data-unique="Sources"><a>Источники</a></li>
+            <ul>
+                <li data-unique="AllSources"><a>Все источнки</a></li>
+            </ul>
           <li data-unique="Facts"><a>Факты</a></li>
-          <ul>
-            <li data-unique="AllFacts"><a>Все факты</a></li>
-            <li data-unique="FactsForCity"><a>Факты для <br />
-            определенного города</a></li>
-            <li data-unique="Fact"><a>Определенный факт</a></li>
-            <li data-unique="FuzzyStringMatch"><a>Нечеткий поиск <br />по фактам</a></li>
-          </ul>
+            <ul>
+              <li data-unique="AllFacts"><a>Все факты</a></li>
+              <li data-unique="FactsForCity"><a>Факты для <br />
+              определенного города</a></li>
+              <li data-unique="Fact"><a>Определенный факт</a></li>
+              <li data-unique="FuzzyStringMatch"><a>Нечеткий поиск <br />по фактам</a></li>
+            </ul>
         </ul>
         <li></li>
       </ul>
@@ -230,6 +234,40 @@
                         "college",
                         "kindergarten",
                         "school"
+                      ]
+                    </pre>
+    </div>
+
+    <div name="Sources" data-unique="Sources"></div>
+    <h3 class='sub_sub_head'>Источники</h3>
+
+    <div class='sub_section'>
+      <div name="AllSources" data-unique="AllSources"></div>
+      <h4 class='sub_sub_sub_head'>Все источники</h4>
+      <h5>Описание</h5>
+      <pre>sources</pre>
+      <p>Возвращает список источников.</p>
+
+      <p>URL ресурса:</p>
+      <pre>http://citydict.ru/api/v1/sources.[format]</pre>
+      <h5>Выходные данные:</h5>
+
+      <p>Структура выходных данных для формата JSON:</p>
+                    <pre>
+                        [
+                          <Название источника>,
+                          ...
+                        ]
+                    </pre>
+      <h5>Пример для формата JSON</h5>
+
+      <p>Пример запроса:</p>
+      <pre>GET http://citydict.ru/api/v1/sources.json</pre>
+      <p>Пример ответа:</p>
+                    <pre>
+                      [
+                        "dbpedia",
+                        "osm"
                       ]
                     </pre>
     </div>
