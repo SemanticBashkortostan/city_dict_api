@@ -14,6 +14,9 @@ class Api::V1::WordsController < Api::V1::BaseController
     if params[:name].present?
       scope = scope.where(name: [params[:name], params[:name].mb_chars.capitalize.to_s])
     end
+    if params[:source].present?
+      scope = scope.includes(:metadata).where(metadata: {source: params[:source]})
+    end
 
     @words = scope.page(params[:page])
     @pages_data = { pages_count: @words.total_pages, per_page: params[:per_page],
