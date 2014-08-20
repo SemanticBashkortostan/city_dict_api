@@ -42,7 +42,7 @@ class DbpediaFetcher
     @xpaths = {
       type: "/rdf:RDF/rdf:Description/rdf:type",
       url: "/rdf:RDF/rdf:Description/owl:sameAs",
-      desciption: "/rdf:RDF/rdf:Description/dbpedia-owl:abstract[@xml:lang='ru']",
+      description: "/rdf:RDF/rdf:Description/dbpedia-owl:abstract[@xml:lang='ru']",
       wiki_id: "/rdf:RDF/rdf:Description/dbpedia-owl:wikiPageID"
     }
   end
@@ -88,31 +88,38 @@ class DbpediaFetcher
 
     type = get_specific_attr(resource_xml, :type, "schema.org")
     ru_url = get_specific_attr(resource_xml, :url, "ru.dbpedia")
-    description = resource_xml.xpath(@xpaths[:desciption]).first.text
+    description = resource_xml.xpath(@xpaths[:description]).first.try(:text)
 
-    if ru_url
-      rus_name = get_rus_name(ru_url)
-      token = VocabularyEntry.find_or_create_by_name_or_normalized_name(rus_name)
+    return unless ru_url
 
-      params ={ source: :dbpedia, city_id: city.id, url: xml_url,
-        type_name: type, vocabulary_entry_id: token.id }
-      metadata = Metadata.where(params).first || Metadata.create(params)
+    rus_name = get_rus_name(ru_url)
+    token = VocabularyEntry.find_or_create_by_name_or_normalized_name(rus_name)
 
-      if metadata.other["ru_url"].nil?
-        metadata.other["ru_url"] = ru_url
-      end
+    params ={ source: :dbpedia, city_id: city.id, url: xml_url,
+      type_name: type, vocabulary_entry_id: token.id }
+    metadata = Metadata.where(params).first || Metadata.create(params)
 
-      wiki_id = resource_xml.xpath(@xpaths[:wiki_id]).first.text
-      wiki_xml = Nokogiri::XML(open(wiki_url(wiki_id)))
-      rus_wiki_url = wiki_xml.xpath("*//ll[@lang='ru']").first.attributes["url"].value
-
-      if rus_wiki_url && metadata.other["rus_wiki_url"].nil?
-        metadata.other["rus_wiki_url"] = rus_wiki_url
-        metadata.other["wiki_id"] = wiki_id
-      end
-
-      metadata.save!
+    if metadata.other["ru_url"].nil?
+      metadata.other["ru_url"] = ru_url
     end
+
+    if description && metadata.other["description"].nil?
+      metadata.other["description"] = description
+    end
+
+    wiki_id = resource_xml.xpath(@xpaths[:wiki_id]).first.text
+    wiki_xml = Nokogiri::XML(open(wiki_url(wiki_id)))
+    rus_wiki_url = wiki_xml.xpath("*//ll[@lang='ru']").first
+    if rus_wiki_url
+      rus_wiki_url = rus_wiki_url.attributes["url"].value
+    end
+
+    if rus_wiki_url && metadata.other["rus_wiki_url"].nil?
+      metadata.other["rus_wiki_url"] = rus_wiki_url
+      metadata.other["wiki_id"] = wiki_id
+    end
+    metadata.save!
+
     metadata
   end
 

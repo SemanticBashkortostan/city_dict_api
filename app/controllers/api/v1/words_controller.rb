@@ -8,14 +8,17 @@ class Api::V1::WordsController < Api::V1::BaseController
     if params[:city_id].present?
       scope = scope.with_city_id(params[:city_id])
     end
+
     if params[:type].present?
-      scope = scope.includes(:metadata).where(metadata: {type_name: params[:type]})
+      scope = scope.with_type_name(params[:type])
     end
+
+    if params[:source].present?
+      scope = scope.with_source(params[:source])
+    end
+
     if params[:name].present?
       scope = scope.where(name: [params[:name], params[:name].mb_chars.capitalize.to_s])
-    end
-    if params[:source].present?
-      scope = scope.includes(:metadata).where(metadata: {source: params[:source]})
     end
 
     @words = scope.page(params[:page])

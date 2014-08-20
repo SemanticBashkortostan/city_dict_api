@@ -4,7 +4,7 @@ class VocabularyEntry < ActiveRecord::Base
   PAGINATES_COUNT = 30
   paginates_per PAGINATES_COUNT
 
-  has_many :metadata, :class_name => "Metadata", :dependent => :destroy
+  has_many :metadata, class_name: "Metadata", dependent: :destroy
 
   validate :normalized_name_uniqueness
   validates :name, :presence => true
@@ -13,6 +13,10 @@ class VocabularyEntry < ActiveRecord::Base
 
   scope :with_city_id, lambda{ |city_id| includes(:metadata)
     .where(metadata: {city_id: city_id}) }
+  scope :with_source, lambda{ |source| includes(:metadata)
+    .where(metadata: {source: source}) }
+  scope :with_type_name, lambda{ |type_name| includes(:metadata)
+    .where(metadata: {type_name: type_name}) }
 
 
   # Find by name or try to normalize name and find by normalized name
