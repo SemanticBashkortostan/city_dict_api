@@ -15,11 +15,11 @@
 # doc.xpath('/rdf:RDF/rdf:Description/rdf:type').first.attributes["resource"].value
 # doc.xpath('/rdf:RDF/rdf:Description/owl:sameAs')
 
-#PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
-#PREFIX dbpprop: <http://dbpedia.org/property/>
-#PREFIX dbres: <http://dbpedia.org/resource/>
-#
-#SELECT ?resource WHERE {
+# PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+# PREFIX dbpprop: <http://dbpedia.org/property/>
+# PREFIX dbres: <http://dbpedia.org/resource/>
+
+# SELECT ?resource WHERE {
 # { ?resource dbpedia-owl:location dbres:Ufa }
 # UNION
 # { ?resource dbpedia-owl:birthPlace dbres:Ufa }
@@ -33,15 +33,18 @@
 # { ?resource dbpedia-owl:producer dbres:Ufa }
 # UNION
 # { ?resource dbpedia-owl:hometown dbres:Ufa }
-#}
+# }
 
 require 'sparql/client'
 
 class DbpediaFetcher
-  def initialize
-    @xpaths = { type: "/rdf:RDF/rdf:Description/rdf:type",
-                url: "/rdf:RDF/rdf:Description/owl:sameAs" }
-
+  def initialize()
+    @xpaths = {
+      type: "/rdf:RDF/rdf:Description/rdf:type",
+      url: "/rdf:RDF/rdf:Description/owl:sameAs",
+      desciption: "/rdf:RDF/rdf:Description/dbpedia-owl:abstract[@xml:lang='ru']",
+      wiki_id: "/rdf:RDF/rdf:Description/dbpedia-owl:wikiPageID"
+    }
   end
 
 
@@ -67,60 +70,70 @@ class DbpediaFetcher
     }"
   end
 
-
   def fill_db!
     sparql = SPARQL::Client.new("http://dbpedia.org/sparql")
 
     City.all.each do |city|
-      puts sparql_query(city.eng_name)
-      result = sparql.query( sparql_query(city.eng_name),
-        :content_type => SPARQL::Client::RESULT_JSON )
+      result = sparql.query(sparql_query(city.eng_name), content_type: SPARQL::Client::RESULT_JSON)
       result.each do |rdf|
-        url = rdf.resource.to_s
-        url["resource"] = "data"
-
-        resource_xml = Nokogiri::XML(open(url))
-
-        type = nil
-        resource_xml.xpath(@xpaths[:type]).each do |entry|
-          if entry.attributes["resource"].value["schema.org"]
-            type = entry.attributes["resource"].value
-            break
-          end
-        end
-
-        ru_url = nil
-        resource_xml.xpath(@xpaths[:url]).each do |entry|
-          if entry.attributes["resource"].value["ru.dbpedia"]
-            ru_url = entry.attributes["resource"].value
-            break
-          end
-        end
-
-        if ru_url
-          rus_name = get_rus_name(ru_url)
-
-          token = VocabularyEntry.find_or_create_by_name_or_normalized_name rus_name
-
-          metadata = Metadata.find_or_create_by_source_and_city_id_and_type_name_and_url_and_vocabulary_entry_id(
-            :dbpedia, city.id, type, url, token.id )
-          if ru_url && metadata.other["ru_url"].nil?
-            metadata.other["ru_url"] = ru_url
-            metadata.save!
-          end
-        end
-
+        xml_url = rdf.resource.to_s
+        xml_url["resource"] = "data"
+        create_or_update_metadata(xml_url, city)
       end
     end
+  end
+
+  def create_or_update_metadata(xml_url, city)
+    resource_xml = Nokogiri::XML(open(xml_url))
+
+    type = get_specific_attr(resource_xml, :type, "schema.org")
+    ru_url = get_specific_attr(resource_xml, :url, "ru.dbpedia")
+    description = resource_xml.xpath(@xpaths[:desciption]).first.text
+
+    if ru_url
+      rus_name = get_rus_name(ru_url)
+      token = VocabularyEntry.find_or_create_by_name_or_normalized_name(rus_name)
+
+      params ={ source: :dbpedia, city_id: city.id, url: xml_url,
+        type_name: type, vocabulary_entry_id: token.id }
+      metadata = Metadata.where(params).first || Metadata.create(params)
+
+      if metadata.other["ru_url"].nil?
+        metadata.other["ru_url"] = ru_url
+      end
+
+      wiki_id = resource_xml.xpath(@xpaths[:wiki_id]).first.text
+      wiki_xml = Nokogiri::XML(open(wiki_url(wiki_id)))
+      rus_wiki_url = wiki_xml.xpath("*//ll[@lang='ru']").first.attributes["url"].value
+
+      if rus_wiki_url && metadata.other["rus_wiki_url"].nil?
+        metadata.other["rus_wiki_url"] = rus_wiki_url
+        metadata.other["wiki_id"] = wiki_id
+      end
+
+      metadata.save!
+    end
+    metadata
   end
 
 
   private
 
 
-  def get_rus_name ru_url
-    ru_url.split("/").last.tr "_", " "
+  def get_rus_name(ru_url)
+    ru_url.split("/").last.tr("_", " ")
   end
 
+  def get_specific_attr(xml, xpath_key, filter)
+    xml.xpath(@xpaths[xpath_key]).each do |entry|
+      if entry.attributes["resource"].value[filter]
+        return entry.attributes["resource"].value
+      end
+    end
+    nil
+  end
 
+  def wiki_url(wiki_id)
+    "https://en.wikipedia.org/w/api.php?action=query&pageids=#{wiki_id}&prop=langlinks&llurl=true&lllimit=50&format=xml"
+  end
 end
