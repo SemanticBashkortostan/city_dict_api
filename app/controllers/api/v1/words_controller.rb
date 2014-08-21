@@ -42,5 +42,7 @@ class Api::V1::WordsController < Api::V1::BaseController
 
   def show
     @word = VocabularyEntry.find(params[:id])
+    @metadata = @word.metadata.where(city_id: params[:city_id]) if params[:city_id]
+    @metadata ||= @word.metadata
   end
 end
